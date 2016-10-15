@@ -1,7 +1,14 @@
-import React from 'react';
+// React dependencies
 import { render } from 'react-dom';
 
+// App dependencies
+import routes from './config/routes';
+
+/**
+ * App initialisation
+ * @returns {Object} Renders the app using React
+ */
 render(
-	<div>hello world</div>,
-	document.getElementById('container')
-)
+    routes,
+    document.getElementById('container')
+);
