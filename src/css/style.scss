@@ -1,3 +1,26 @@
-body {
-color: black;
-}
+// encoding
+@charset "UTF-8";
+
+// utilities
+@import "utils/_sass-setup";
+
+// reset
+@import "_reset";
+
+// configuration
+@import "config/_fonts";
+@import "config/_icons";
+
+// global
+@import "global/_common";
+
+// components
+@import "components/_header";
+@import "components/_nav";
+@import "components/_footer";
+@import "components/_buttons";
+@import "components/_forms";
+@import "components/_panels";
+
+// pages
+// @import 'global/_parallax';

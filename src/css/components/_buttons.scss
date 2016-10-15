@@ -1,0 +1,16 @@
+.btn {
+	-webkit-appearance:none; // iOS fix
+	border:none;
+	border-radius:3px;
+	padding:16px 25px;
+	i {
+		margin-left:10px;
+		margin-right:-10px;
+	}
+}
+.btnPrimary {
+	@extend .btn;
+	background:$primaryColour;
+	color: $tertiaryTextColour;
+	display:inline-block;
+}

@@ -1,0 +1,90 @@
+.menuLink {
+    float:right;
+    a {
+        cursor:pointer;
+        display:none;
+        padding:20px 10px 20px 15px;
+    }
+}
+nav {
+    clear:right;
+    position:relative;
+    ul {
+        float:left;
+        overflow:hidden;
+    }
+    li {
+        float:left;
+        list-style:none;
+        + li {
+            margin-left:10px;
+        }
+    }
+    a {
+        display: block;
+        padding:20px;
+        &:hover,
+        &:focus {
+            background:$white;
+            color:$primaryColour;
+            .icon-male {
+                color:#1E1E85;
+            }
+            .icon-female {
+                color:#B526B0;
+            }
+            .icon-heart {
+                color:#A60319;
+            }
+        }
+    }
+    i {
+        margin-right:5px;
+        position:relative;
+        top:-1px;
+    }
+    .icon-male {
+        margin-right:-5px;
+        &:before {
+            margin-right:0;
+        }
+    }
+    .icon-female {
+        margin-left:-5px;
+        &:before {
+            margin-left:0;
+        }
+    }
+}
+@include mobile {
+    .menuLink a {
+        display:block;
+    }
+    nav {
+        > ul:first-child {
+            float:none;
+        }
+        .globalNav {
+            background: $primaryColour;
+            border:1px solid $white;
+            border-width:1px 0;
+            display:none;
+            overflow:hidden;
+            position:absolute;
+            width:100%;
+            li {
+                float:none;
+                + li {
+                    border-top:1px solid $white;
+                    margin-left:0;
+                }
+            }
+            .icon-male {
+                margin-left:-8px;
+            }
+        }
+        .showMenu {
+            display:block;
+        }
+    }
+}

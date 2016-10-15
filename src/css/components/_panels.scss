@@ -1,0 +1,33 @@
+.panel {
+    background:white;
+    overflow:hidden;
+    padding:40px;
+    z-index:0;
+    + .panel {
+        border-top:2px solid $primaryColour;
+    }
+}
+.panelContent {
+    background:white;
+    margin:180px 3% 120px;
+    padding:20px 1%;
+    width:40%;
+    .alternativePanel & {
+        float:right;
+    }
+}
+@include mobile {
+    .panel {
+        min-height:0;
+        padding:15px;
+        position: static;
+    }
+    .panelContent {
+        margin-bottom:0;
+        margin-top:0;
+        width:92%;
+        .pagination {
+            display:none;
+        }
+    }
+}

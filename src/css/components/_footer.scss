@@ -1,0 +1,98 @@
+.global-footer {
+    background:$primaryColour;
+    border-top:2px solid $primaryColour;
+    color:$white;
+    z-index:2;
+    > div {
+        overflow:hidden;
+    }
+    > a {
+        background:inherit;
+        border:0;
+        -webkit-border-radius: 26px 26px 0 0;
+        -moz-border-radius: 26px 26px 0 0;
+        border-radius: 26px 26px 0 0;
+        left:50%;
+        margin-left:-19px;
+        padding:12px 15px;
+        position:absolute;
+        top:-40px;
+    }
+    .socialLinks {
+        float:left;
+        margin-top:10px;
+        width:49.5%;
+        &:first-child {
+            margin-left:4%;
+            width:45.5%;
+        }
+        h2 {
+            float:left;
+            @include fontSize(2.6);
+            font-weight:bold;
+            margin:2px 1%;
+            min-width:60px;
+            text-decoration: none;
+            width:12.5%;
+        }
+        ul {
+            float:left;
+            overflow: hidden;
+            width:84.5%;
+        }
+        li {
+            float:left;
+        }
+        a {
+            display: block;
+            padding:10px;
+            &:hover,
+            &:focus {
+                background:$white;
+                border:0;
+                @include borderRadius(10px);
+                color:$primaryColour;
+            }
+        }
+        i {
+            margin-right:5px;
+        }
+        @each $socialMedia, $socialMediaColour in (facebook, $facebookColour),
+                                                  (twitter, $twitterColour),
+                                                  (pinterest, $pinterestColour) {
+            .#{$socialMedia} {
+                &:hover,
+                &.focus {
+                    i {
+                        color:$socialMediaColour;
+                    }
+                }
+            }
+        }
+    }
+    .siteDetails {
+        clear:both;
+        overflow:hidden;
+        padding:10px 4%;
+        p {
+            float:left;
+        }
+        a {
+            display:inline-block;
+            padding:10px 0;
+        }
+    }
+}
+@include mobile {
+    .global-footer {
+        position: static;
+        > a {
+            display:none;
+        }
+        .socialLinks {
+            h2 {
+                padding-left:10px;
+            }
+        }
+    }
+}

@@ -115,7 +115,7 @@ gulp.task('csscomb', function () {
 /**
  * Task to compile Sass
  */
-gulp.task('sass', ['csscomb'], function() {
+gulp.task('sass', function() {
     return gulp.src( directories.cssSrc + allFilesInAllFolders + fileExtensions.sass )
         .pipe( sourcemaps.init() )
         .pipe(
