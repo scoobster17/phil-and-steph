@@ -1,0 +1,47 @@
+{
+  "name": "phil-and-steph",
+  "version": "1.0.0",
+  "description": "Wedding website for myself and my future wife",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./server/config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scoobster17/phil-and-steph.git"
+  },
+  "keywords": [
+    "Phil",
+    "Steph",
+    "Gibbins",
+    "Wedding",
+    "Engagement",
+    "Married",
+    "Engaged"
+  ],
+  "author": "Phil Gibbins <scoobster17@hotmail.co.uk> (http://www.philgibbins.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scoobster17/phil-and-steph/issues"
+  },
+  "homepage": "https://github.com/scoobster17/phil-and-steph",
+  "devDependencies": {
+    "autoprefixer": "^6.5.1",
+    "browserify": "^13.1.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-eslint": "^3.0.1",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-shell": "^0.5.2",
+    "gulp-sourcemaps": "^2.1.1",
+    "gulp-watch": "^4.3.10",
+    "reset-css": "^2.2.0"
+  },
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0"
+  }
+}
