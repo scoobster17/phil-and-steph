@@ -1,7 +1,5 @@
 // React dependencies
 import React from 'react';
-
-// App dependencies
 import { Link } from 'react-router';
 
 /**

@@ -1,5 +1,6 @@
 // React dependencies
 import React from 'react';
+import { Link } from 'react-router';
 
 /**
  * Global header component
@@ -17,34 +18,54 @@ class GlobalHeader extends React.Component {
                 <nav>
                     <ul>
                         <li className="homeLink">
-                            <a href="/">PhilAndSteph.co.uk</a>
+                            <Link to="/">
+                                PhilAndSteph.co.uk
+                            </Link>
                         </li>
                         <li className="menuLink">
-                            <a>
+                            <Link>
                                 Menu
                                 <i className="icon-menu"></i>
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                     <ul className="globalNav">
                         <li>
-                            <a href="/">
+                            <Link to="/">
                                 <i className="icon-home"></i>
                                 Home
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#">
+                            <Link to="/people">
                                 <i className="icon-male"></i>
                                 <i className="icon-female"></i>
-                                About
-                            </a>
+                                People
+                            </Link>
                         </li>
                         <li>
-                            <a href="#">
+                            <Link to="/events/wedding">
                                 <i className="icon-heart"></i>
                                 The Wedding
-                            </a>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/photos">
+                                <i className="icon-heart"></i>
+                                Photos
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/news">
+                                <i className="icon-heart"></i>
+                                News
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/contact">
+                                <i className="icon-heart"></i>
+                                Contact
+                            </Link>
                         </li>
                     </ul>
                 </nav>
