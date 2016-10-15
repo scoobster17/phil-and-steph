@@ -14,10 +14,36 @@
 			{
 				"media": "twitter",
 				"profile": "https://twitter.com/scoobster17"
+			},
+			{
+				"media": "pinterest",
+				"profile": "https://www.pinterest.com/scoobster17/"
 			}
 		],
 		"wedding": {
 			"role": "groom"
 		}
+	},
+	{
+		"id": 1,
+		"order": 1,
+		"firstName": "Stephanie",
+		"lastName": "Underdown",
+		"nickname": "Steph",
+		"title": "Ms",
+		"socialLinks": [
+			{
+				"media": "facebook",
+				"profile": "https://www.facebook.com/stephanie.underdown.1"
+			},
+            {
+            	"media": "twitter",
+            	"profile": "https://twitter.com/s_underdown242"
+            },
+            {
+            	"media": "pinterest",
+            	"profile": "https://uk.pinterest.com/stephanie6041/"
+            }
+		]
 	}
 ]

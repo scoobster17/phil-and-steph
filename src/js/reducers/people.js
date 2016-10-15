@@ -1,3 +1,6 @@
+// App dependencies
+import $ from 'jquery';
+
 /**
  * Reducer function for people part of app state
  * @param  {Array}  state  Array containing list of peopple
@@ -8,11 +11,26 @@ function people(state = [], action) {
     switch (action.type) {
 
         /**
-         * Test
+         * Get details for all people
          * @return {Array} Updated state
          */
-        case 'TEST':
+        case 'GET_PEOPLE':
+
+            $.ajax({
+                url: '/people',
+                success: action.success,
+                error: action.error
+            });
+
             return state;
+            break;
+
+        /**
+         * Update details for all people
+         * @return {Array} Updated state
+         */
+        case 'UPDATE_PEOPLE':
+            return action.response;
             break;
 
         /**

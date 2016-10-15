@@ -1,10 +1,27 @@
 // React dependencies
 import React from 'react';
 
+// Redux dependencies
+import { connect } from 'react-redux';
+import { mapStateToProps, mapDispatchToProps } from '../../config/mapping.js';
+
+// App dependencies
+import SocialLinks from './social-links';
+
 /**
  * Global footer component
  */
 class GlobalFooter extends React.Component {
+
+    /**
+     * Fetch people details (contains social links) on component load
+     */
+    componentWillMount() {
+        this.props.getPeople(
+            this.props.updatePeople
+            // this.props.getPeopleError
+        );
+    }
 
     /**
      * Render method for React component to render HTML utilising JSX
@@ -12,60 +29,18 @@ class GlobalFooter extends React.Component {
      */
     render() {
 
+        const { people } = this.props;
+
         return (
             <footer className="global-footer">
-                <section className="socialLinks">
-                    <h2>
-                        Phil
-                        <span className="access">&#39;s Social Media</span>
-                    </h2>
-                    <ul>
-                        <li className="facebook">
-                            <a href="https://www.facebook.com/scoobster17">
-                                <i className="icon-facebook-rect"></i>
-                                <span className="access">Find Phil on </span>Facebook
-                            </a>
-                        </li>
-                        <li className="twitter">
-                            <a href="https://twitter.com/scoobster17">
-                                <i className="icon-twitter-bird"></i>
-                                <span className="access">Find Phil on </span>Twitter
-                            </a>
-                        </li>
-                        <li className="pinterest">
-                            <a href="https://www.pinterest.com/scoobster17/">
-                                <i className="icon-pinterest-circled"></i>
-                                <span className="access">Find Phil on </span>Pinterest
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-                <section className="socialLinks">
-                    <h2>
-                        Steph
-                        <span className="access">&#39;s Social Media</span>
-                    </h2>
-                    <ul>
-                        <li className="facebook">
-                            <a href="https://www.facebook.com/stephanie.underdown.1">
-                                <i className="icon-facebook-rect"></i>
-                                <span className="access">Find Steph on </span>Facebook
-                            </a>
-                        </li>
-                        <li className="twitter">
-                            <a href="https://twitter.com/s_underdown242?lang=en">
-                                <i className="icon-twitter-bird"></i>
-                                <span className="access">Find Steph on </span>Twitter
-                            </a>
-                        </li>
-                        <li className="pinterest">
-                            <a href="https://uk.pinterest.com/stephanie6041/">
-                                <i className="icon-pinterest-circled"></i>
-                                <span className="access">Find Steph on </span>Pinterest
-                            </a>
-                        </li>
-                    </ul>
-                </section>
+                {
+                    people ?
+                        people.map((person, index) => {
+                            return <SocialLinks person={person} key={index} />
+                        })
+                    :
+                        ''
+                }
                 <section className="siteDetails">
                     <p>
                         &copy; Copyright Phil Gibbins of&nbsp;
@@ -84,4 +59,4 @@ class GlobalFooter extends React.Component {
     }
 }
 
-export default GlobalFooter;
+export default connect(mapStateToProps, mapDispatchToProps)(GlobalFooter);
