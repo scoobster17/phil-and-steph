@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { mapStateToProps, mapDispatchToProps } from '../../config/mapping.js';
 
 // App dependencies
-import SocialLinks from './social-links';
+import SocialLinksList from '../social-links/list';
 
 /**
  * Global footer component
@@ -36,7 +36,7 @@ class GlobalFooter extends React.Component {
                 {
                     people ?
                         people.map((person, index) => {
-                            return <SocialLinks person={person} key={index} />
+                            return <SocialLinksList person={person} key={index} />
                         })
                     :
                         ''

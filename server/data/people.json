@@ -8,15 +8,15 @@
 		"title": "Mr",
 		"socialLinks": [
 			{
-				"media": "facebook",
+				"media": "Facebook",
 				"profile": "https://www.facebook.com/scoobster17"
 			},
 			{
-				"media": "twitter",
+				"media": "Twitter",
 				"profile": "https://twitter.com/scoobster17"
 			},
 			{
-				"media": "pinterest",
+				"media": "Pinterest",
 				"profile": "https://www.pinterest.com/scoobster17/"
 			}
 		],
@@ -33,17 +33,20 @@
 		"title": "Ms",
 		"socialLinks": [
 			{
-				"media": "facebook",
+				"media": "Facebook",
 				"profile": "https://www.facebook.com/stephanie.underdown.1"
 			},
             {
-            	"media": "twitter",
+            	"media": "Twitter",
             	"profile": "https://twitter.com/s_underdown242"
             },
             {
-            	"media": "pinterest",
+            	"media": "Pinterest",
             	"profile": "https://uk.pinterest.com/stephanie6041/"
             }
-		]
+		],
+		"wedding": {
+			"role": "bride"
+		}
 	}
 ]
