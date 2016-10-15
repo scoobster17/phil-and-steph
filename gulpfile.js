@@ -18,20 +18,21 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 
 // js
-// var babel = require('gulp-babel');
-// var eslint = require('gulp-eslint');
+var babel = require('gulp-babel');
+var eslint = require('gulp-eslint');
 
 // compilation utilities
 var csscomb = require('gulp-csscomb');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
-// var browserify = require('browserify');
+var browserify = require('browserify');
 var sourcemaps = require('gulp-sourcemaps');
 
 // helpers
 var watch = require('gulp-watch');
 
 // utilities
+var fs = require('fs');
 var shell = require('gulp-shell');
 
 // server
@@ -142,12 +143,12 @@ gulp.task('sass', ['csscomb'], function() {
 /* JAVASCRIPT */
 
 // to add source maps
-/*
+
 gulp.task("js", ['eslint'], function () {
   browserify( directories.jsSrc + "/" + files.jsSrc )
     .transform( 'babelify', babelConfig )
     .bundle()
-    .pipe(gulp.dest( directories.jsDist + "/" + files.jsDist ));
+    .pipe(fs.createWriteStream( directories.jsDist + "/" + files.jsDist));
 });
 
 // es2015 linting
@@ -156,7 +157,7 @@ gulp.task('eslint', function() {
         .pipe(eslint())
         .pipe(eslint.format());
 });
-*/
+
 /* ************************************************************************** */
 
 /* PROCESSING */
@@ -178,9 +179,9 @@ gulp.task('start-watch', function() {
     );
 
     // watch for js changes
-    /*watch([ directories.jsSrc + allFilesInAllFolders + fileExtensions.js ], function() {
+    watch([ directories.jsSrc + allFilesInAllFolders + fileExtensions.js ], function() {
         gulp.start('js');
-    });*/
+    });
 
     /*// watch for server config changes
     watch([files.serverConfig], function() {
@@ -192,7 +193,7 @@ gulp.task('start-watch', function() {
 
 });
 
-gulp.task('watch', ['sass'], shell.task([
+gulp.task('watch', ['sass', 'js'], shell.task([
     'gulp start-watch'
 ]));
 
