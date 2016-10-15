@@ -1,0 +1,23 @@
+[
+	{
+		"id": 0,
+		"order": 0,
+		"firstName": "Philip",
+		"lastName": "Gibbins",
+		"nickname": "Phil",
+		"title": "Mr",
+		"socialLinks": [
+			{
+				"media": "facebook",
+				"profile": "https://www.facebook.com/scoobster17"
+			},
+			{
+				"media": "twitter",
+				"profile": "https://twitter.com/scoobster17"
+			}
+		],
+		"wedding": {
+			"role": "groom"
+		}
+	}
+]
