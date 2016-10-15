@@ -173,7 +173,8 @@ gulp.task('start-watch', function() {
             directories.cssSrc + allFilesInAllFolders + fileExtensions.sass
         ],
         function() {
-            cssWatcher.unwatch(directories.cssSrc + allFilesInAllFolders + fileExtensions.sass)
+            cssWatcher.unwatch(directories.cssSrc + allFilesInAllFolders + fileExtensions.sass);
+            cssWatcher = null;
             gulp.start('watch');
         }
     );
