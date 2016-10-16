@@ -1,5 +1,6 @@
 // React dependencies
 import React from 'react';
+import { Link } from 'react-router';
 
 /**
  * Home page component; default page of app.
@@ -22,21 +23,14 @@ class HomePage extends React.Component {
                         </h2>
                         <p>
                             <span id="remaining-time">
-                                Ages
+                                Ages&nbsp;
                             </span>
                             left until the wedding!
                         </p>
-                    </section>
-                </article>
-                <article id="intro" className="panel currentPanel canterburyKiss">
-                    <section className="panelContent">
-                        <h2>Welcome to the wonderful world of Phil and Steph!</h2>
-                        <div className="mblImg"></div>
-                        <p>Hi there, you have found your way to PhilAndSteph.co.uk, the online home of everything that I, web developer Phil, thinks is important for you to know. For instance, there&apos;s now a wedding in sight!</p>
-                        <p>This site will therefore revolve around that main point for the next couple of years, and then perhaps move onto something else&hellip;</p>
-                        <h2><strong>We want your photos!</strong></h2>
-                        <p>If you have any photos of the lovely couple, specificaly from the engagement party but all will be accepted, please do send them on to either Phil or Stephanie, and you may even see your handywork on this site!</p>
-                        <p>Please send in high resolution, full size, original quality images (no jodgements made!) and Phil can photoshop them to look all sparkly. Even if you think they&apos;re no good, you'd be surprised how they can turn out!</p>
+                        <Link to="events/wedding" className="btnPrimary">
+                            All about the Wedding
+                            <i className="icon-heart"></i>
+                        </Link>
                     </section>
                 </article>
                 <article id="theCouple" className="panel alternativePanel cheekyAndCute">

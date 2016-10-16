@@ -50,9 +50,10 @@ class GlobalHeader extends React.Component {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/photos">
+                            <Link to="/media">
                                 <i className="icon-camera"></i>
-                                Photos
+                                <i className="icon-video"></i>
+                                Media
                             </Link>
                         </li>
                         <li>

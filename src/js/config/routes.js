@@ -10,6 +10,7 @@ import store, { history } from './store';
 import Layout from '../components/global/layout';
 import HomePage from '../pages/home';
 import PeoplePage from '../pages/people';
+import MediaPage from '../pages/media';
 
 const routes = (
     <Provider store={store}>
@@ -18,6 +19,7 @@ const routes = (
                 <IndexRoute component={HomePage} />
                 <Route path="people" component={PeoplePage} />
                 <Route path="people/:personId" component={PeoplePage} />
+                <Route path="media" component={MediaPage} />
             </Route>
         </Router>
     </Provider>
