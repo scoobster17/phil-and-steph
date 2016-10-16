@@ -14,9 +14,23 @@ class HomePage extends React.Component {
 
         return (
             <main>
+                <article className="panel">
+                    <h1>Welcome to PhilAndSteph.co.uk</h1>
+                    <section>
+                        <h2>
+                            Wedding Countdown
+                        </h2>
+                        <p>
+                            <span id="remaining-time">
+                                Ages
+                            </span>
+                            left until the wedding!
+                        </p>
+                    </section>
+                </article>
                 <article id="intro" className="panel currentPanel canterburyKiss">
                     <section className="panelContent">
-                        <h1>Welcome to the wonderful world of Phil and Steph!</h1>
+                        <h2>Welcome to the wonderful world of Phil and Steph!</h2>
                         <div className="mblImg"></div>
                         <p>Hi there, you have found your way to PhilAndSteph.co.uk, the online home of everything that I, web developer Phil, thinks is important for you to know. For instance, there&apos;s now a wedding in sight!</p>
                         <p>This site will therefore revolve around that main point for the next couple of years, and then perhaps move onto something else&hellip;</p>
@@ -46,6 +60,61 @@ class HomePage extends React.Component {
             </main>
         )
     }
+
+    componentDidMount() {
+        this.updateWeddingCountdown();
+    }
+
+    updateWeddingCountdown() {
+
+        const weddingDay = new Date(2017, 6, 31, 14, 30);
+        // console.log(weddingDay.toUTCString())
+
+        const remainingTimeIndicator = document.getElementById('remaining-time');
+
+        const processRemainingTime = function() {
+
+            const today = new Date();
+            const remainingTime = {
+                milliseconds: weddingDay - today
+            };
+
+            if (remainingTime.milliseconds < 0) {
+
+                clearTimeout(refreshInterval);
+
+                remainingTime.days    = 0;
+                remainingTime.hours   = 0;
+                remainingTime.minutes = 0;
+                remainingTime.seconds = 0;
+
+            } else {
+
+                const second = 1000;
+                const minute = 60 * second;
+                const hour = 60 * minute;
+                const day = 24 * hour;
+
+                remainingTime.days    = Math.floor(remainingTime.milliseconds / day);
+                remainingTime.hours   = Math.floor((remainingTime.milliseconds % day) / hour);
+                remainingTime.minutes = Math.floor((remainingTime.milliseconds % hour) / minute);
+                remainingTime.seconds = Math.floor((remainingTime.milliseconds % minute) / second);
+
+            }
+
+            remainingTimeIndicator.innerHTML =
+                remainingTime.days + ' days ' +
+                remainingTime.hours + ' hours ' +
+                remainingTime.minutes + ' minutes ' +
+                remainingTime.seconds + ' seconds';
+
+        }
+
+        const refreshInterval = setInterval(
+            processRemainingTime,
+            1000
+        );
+    };
 }
 
 export default HomePage;

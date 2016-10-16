@@ -44,26 +44,26 @@ class GlobalHeader extends React.Component {
                             </Link>
                         </li>
                         <li>
-                            <Link to="/events/wedding">
-                                <i className="icon-heart"></i>
-                                The Wedding
+                            <Link to="/events">
+                                <i className="icon-calendar"></i>
+                                Events
                             </Link>
                         </li>
                         <li>
                             <Link to="/photos">
-                                <i className="icon-heart"></i>
+                                <i className="icon-camera"></i>
                                 Photos
                             </Link>
                         </li>
                         <li>
                             <Link to="/news">
-                                <i className="icon-heart"></i>
+                                <i className="icon-th-list"></i>
                                 News
                             </Link>
                         </li>
                         <li>
                             <Link to="/contact">
-                                <i className="icon-heart"></i>
+                                <i className="icon-phone"></i>
                                 Contact
                             </Link>
                         </li>
