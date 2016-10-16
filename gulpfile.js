@@ -103,14 +103,6 @@ gulp.task('kill-server-process', shell.task([
 /**
  * Task to format CSS
  */
-gulp.task('csscomb', function () {
-    gulp.src(
-        directories.cssSrc + allFilesInAllFolders + fileExtensions.sass,
-        {base: './'}
-    )
-    .pipe( csscomb() )
-    .pipe( gulp.dest('./') );
-});
 
 /**
  * Task to compile Sass
@@ -165,17 +157,15 @@ gulp.task('eslint', function() {
 /**
  * Task to watch for changes in files and trigger events
  */
-gulp.task('start-watch', function() {
+gulp.task('watch', function() {
 
     // watch for css changes
-    var cssWatcher = watch(
+    watch(
         [
             directories.cssSrc + allFilesInAllFolders + fileExtensions.sass
         ],
         function() {
-            cssWatcher.unwatch(directories.cssSrc + allFilesInAllFolders + fileExtensions.sass);
-            cssWatcher = null;
-            gulp.start('watch');
+            gulp.start('sass');
         }
     );
 
@@ -193,10 +183,6 @@ gulp.task('start-watch', function() {
     gulp.start('start-server');*/
 
 });
-
-gulp.task('watch', ['sass', 'js'], shell.task([
-    'gulp start-watch'
-]));
 
 /*
     Task to force kill all node processes and start the watch
