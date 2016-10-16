@@ -15,14 +15,14 @@ class HomePage extends React.Component {
 
         return (
             <main>
-                <article className="panel">
-                    <h1>Welcome to PhilAndSteph.co.uk</h1>
+                <h1 className="access">Welcome to PhilAndSteph.co.uk</h1>
+                <article className="panel weddingCountdown">
                     <section>
-                        <h2>
+                        <h2 className="access">
                             Wedding Countdown
                         </h2>
                         <p>
-                            <span id="remaining-time">
+                            <span id="remaining-time" className="remaining-time">
                                 Ages&nbsp;
                             </span>
                             left until the wedding!
@@ -96,11 +96,14 @@ class HomePage extends React.Component {
 
             }
 
+            if (remainingTime.minutes < 10) remainingTime.minutes = '0' + remainingTime.minutes;
+            if (remainingTime.seconds < 10) remainingTime.seconds = '0' + remainingTime.seconds;
+
             remainingTimeIndicator.innerHTML =
-                remainingTime.days + ' days ' +
-                remainingTime.hours + ' hours ' +
-                remainingTime.minutes + ' minutes ' +
-                remainingTime.seconds + ' seconds';
+                '<span>' + remainingTime.days + '<abbr title="days">d</abbr></span> ' +
+                '<span>' + remainingTime.hours + '<abbr title="hours">h</abbr></span> ' +
+                '<span>' + remainingTime.minutes + '<abbr title="minutes">m</abbr></span> ' +
+                '<span>' + remainingTime.seconds + '<abbr title="seconds">s</abbr></span>';
 
         }
 

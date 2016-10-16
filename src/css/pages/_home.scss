@@ -1,0 +1,19 @@
+.weddingCountdown {
+	text-align: center;
+	p {
+		margin: 0 auto;
+	}
+	.remaining-time {
+		display: block;
+		font-family: $headingFontStack;
+		@include fontSize(8);
+		font-weight: bold;
+		span {
+			&:nth-child(4) {
+				display:inline-block;
+				min-width: 145px;
+				text-align:left;
+			}
+		}
+	}
+}
