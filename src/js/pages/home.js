@@ -27,28 +27,73 @@ class HomePage extends React.Component {
                             </span>
                             left until the wedding!
                         </p>
-                        <Link to="events/wedding" className="btnPrimary">
+                        <Link to="/events/wedding" className="btnPrimary">
                             All about the Wedding
                             <i className="icon-heart"></i>
                         </Link>
                     </section>
                 </article>
-                <article id="theCouple" className="panel alternativePanel cheekyAndCute">
+                <article className="panel alternativePanel news">
                     <section className="panelContent">
-                        <h2>The couple</h2>
-                        <div className="mblImg portrait"></div>
-                        <p>Whether you are a friend or family member of &lsquo;him&rdquo; or &lsquo;her&rdquo;, get to know a bit about the couple here.</p>
-                        <p>You never know, if you do think you know them, you might find out something new! For instance, did you know Phil is a massive Iron Man fan? Or that Steph is ginger?</p>
-                        <a href="#" className="btnPrimary">About Phil &amp; Steph<i className="icon-right-open"></i></a>
+                        <h2>Latest News</h2>
+                        <ol>
+                            <li>
+                                <article>
+                                    <h3>Honeymoon booked!</h3>
+                                    <p>The honeymoon has now been booked! We are soaring off to our chosen destination of Jamaica&hellip;</p>
+                                    <Link to="/news/17" className="btn">
+                                        Read more<span className="access"> about the honeymoon being booked</span>
+                                        <i className="icon-right-open"></i>
+                                    </Link>
+                                </article>
+                            </li>
+                            <li>
+                                <article>
+                                    <h3>Honeymoon booked!</h3>
+                                    <p>The honeymoon has now been booked! We are soaring off to our chosen destination of Jamaica&hellip;</p>
+                                    <Link to="/news/17" className="btn">
+                                        Read more<span className="access"> about the honeymoon being booked</span>
+                                        <i className="icon-right-open"></i>
+                                    </Link>
+                                </article>
+                            </li>
+                            <li>
+                                <article>
+                                    <h3>Honeymoon booked!</h3>
+                                    <p>The honeymoon has now been booked! We are soaring off to our chosen destination of Jamaica&hellip;</p>
+                                    <Link to="/news/17" className="btn">
+                                        Read more<span className="access"> about the honeymoon being booked</span>
+                                        <i className="icon-right-open"></i>
+                                    </Link>
+                                </article>
+                            </li>
+                        </ol>
+                        <Link to="/news" className="btnPrimary">
+                            See all news
+                            <i className="icon-th-list"></i>
+                        </Link>
+                    </section>
+                </article>
+                <article className="panel alternativePanel">
+                    <section className="panelContent">
+                        <h2>People</h2>
+                        <p>Whether you are a friend or family member of &ldquo;him&rdquo; or &ldquo;her&rdquo;, you can get to know a bit about the couple on our People page. There are also details about the whole bridal party too!</p>
+                        <Link to="/people" className="btnPrimary">
+                            People
+                            <i className="icon-male"></i>
+                            <i className="icon-female"></i>
+                        </Link>
                     </section>
                 </article>
                 <article id="wedding" className="panel happilyEngaged">
                     <section className="panelContent">
-                        <h2>The Wedding</h2>
-                        <div className="mblImg portrait"></div>
-                        <p>Here you can find out about a major feature in our lives; our wedding.</p>
-                        <p>This section features details of the proposal and the engagement party and the wedding itself. That&apos;s right, you get to find out why on earth Steph is wearing that dress! But if you are a guest at our wedding, some details you may need to know will be available here as they become available.</p>
-                        <a href="#" className="btnPrimary">The Wedding<i className="icon-right-open"></i></a>
+                        <h2>Photos & Videos</h2>
+                        <p>Take a look at a selection of media of the couple and events, including the engagement party!</p>
+                        <Link to="/media" className="btnPrimary">
+                            Photos &amp; Videos
+                            <i className="icon-camera"></i>
+                            <i className="icon-video"></i>
+                        </Link>
                     </section>
                 </article>
             </main>

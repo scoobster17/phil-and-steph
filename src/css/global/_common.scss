@@ -42,8 +42,8 @@ h2 {
 }
 h3 {
     font-family:$headingFontStack;
-    @include fontSize(2);
-    margin:0 0 30px;
+    @include fontSize(2.5);
+    margin:0 0 10px;
     text-decoration: underline;
 }
 p {

@@ -2,6 +2,9 @@
 import React from 'react';
 import { Link } from 'react-router';
 
+// temp for toggle class until joose-utils es2015-ified
+import $ from 'jquery';
+
 /**
  * Global header component
  */
@@ -72,6 +75,42 @@ class GlobalHeader extends React.Component {
                 </nav>
             </header>
         )
+    }
+
+    componentDidMount() {
+
+        var pas = window.pas || {};
+        pas.global = (function () {
+
+            var elems = {};
+            var config = {
+                showMenuClass: 'showMenu'
+            };
+
+            var bindElems = function() {
+                elems.menuLink = document.querySelector('.menuLink');
+                elems.navList = document.querySelector('nav .globalNav');
+            };
+
+            var bindEvents = function () {
+                elems.menuLink.addEventListener('click', showHideNav);
+            };
+
+            var showHideNav = function() {
+                // jquery used temporarily
+                $(elems.navList).toggleClass(config.showMenuClass);
+            };
+
+            var init = function () {
+                bindElems();
+                bindEvents();
+            };
+
+            return {
+                init: init
+            };
+        })();
+        pas.global.init();
     }
 }
 

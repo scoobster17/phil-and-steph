@@ -1,7 +1,8 @@
 .btn {
 	-webkit-appearance:none; // iOS fix
-	border:none;
+	border:2px solid $primaryColour;
 	border-radius:3px;
+	display:inline-block;
 	padding:16px 25px;
 	i {
 		margin-left:10px;
