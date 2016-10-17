@@ -1,5 +1,6 @@
 .panel {
-    background:white;
+    background:$white;
+    //background:#FFFFEE;
     overflow:hidden;
     padding:40px;
     z-index:0;
@@ -8,7 +9,6 @@
     }
 }
 .panelContent {
-    background:white;
     margin:180px 3% 120px;
     padding:20px 1%;
     width:40%;

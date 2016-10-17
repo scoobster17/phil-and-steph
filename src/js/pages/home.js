@@ -101,7 +101,7 @@ class HomePage extends React.Component {
 
             remainingTimeIndicator.innerHTML =
                 '<span>' + remainingTime.days + '<abbr title="days">d</abbr></span> ' +
-                '<span>' + remainingTime.hours + '<abbr title="hours">h</abbr></span> ' +
+                '<span class="clearfix clearfix-small-only">' + remainingTime.hours + '<abbr title="hours">h</abbr></span> ' +
                 '<span>' + remainingTime.minutes + '<abbr title="minutes">m</abbr></span> ' +
                 '<span>' + remainingTime.seconds + '<abbr title="seconds">s</abbr></span>';
 

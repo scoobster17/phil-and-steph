@@ -1,18 +1,21 @@
 .weddingCountdown {
 	text-align: center;
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+	> section {
+		margin: 20px 0;
+	}
 	p {
 		margin: 0 auto;
 	}
 	.remaining-time {
 		display: block;
 		font-family: $headingFontStack;
-		@include fontSize(8);
+		@include fontSize(6);
 		font-weight: bold;
 		span {
 			&:nth-child(4) {
 				display:inline-block;
-				min-width: 145px;
-				text-align:left;
+				min-width: 103px;
 			}
 		}
 	}

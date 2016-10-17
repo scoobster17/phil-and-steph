@@ -145,6 +145,12 @@ strong {
     text-indent: $accessLeft;
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 @include mobile {
     .container {
         height:auto;

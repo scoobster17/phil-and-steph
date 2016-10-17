@@ -1,0 +1,30 @@
+// encoding
+@charset "UTF-8";
+
+// utilities
+@import "../utils/_sass-setup";
+
+// overwrites
+.global-header {
+	color: red !important;
+}
+.weddingCountdown {
+	min-height:500px;
+	> section {
+		margin-top: 125px;
+	}
+	.remaining-time {
+		@include fontSize(8);
+		span {
+			&:nth-child(4) {
+				min-width: 145px;
+				text-align:left;
+			}
+		}
+	}
+}
+.clearfix-small-only:after {
+	content: none;
+	clear:none;
+	display:inline;
+}
