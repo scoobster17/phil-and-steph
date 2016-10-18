@@ -1,3 +1,6 @@
+// App dependencies
+import $ from 'jquery';
+
 /**
  * Reducer function for news part of app state
  * @param  {Array}  state  Array containing list of news pieces
@@ -7,12 +10,27 @@
 function news(state = [], action) {
     switch (action.type) {
 
-        /**
-         * Test
+         /**
+         * Get details for all news
          * @return {Array} Updated state
          */
-        case 'TEST':
+        case 'GET_NEWS':
+
+            $.ajax({
+                url: '/data/news',
+                success: action.success,
+                error: action.error
+            });
+
             return state;
+            break;
+
+        /**
+         * Update details for all news
+         * @return {Array} Updated state
+         */
+        case 'UPDATE_NEWS':
+            return action.response;
             break;
 
         /**

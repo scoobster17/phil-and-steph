@@ -20,6 +20,11 @@ require('dotenv').config()
 var app = express();
 app.use( express.static(__dirname + "/../dist/") );
 
+// News details
+app.get('/data/news', function(req, res) {
+    res.sendFile(__dirname + '/data/news.json');
+});
+
 // People details
 app.get('/data/people', function(req, res) {
     res.sendFile(__dirname + '/data/people.json');
