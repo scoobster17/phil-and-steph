@@ -31,11 +31,22 @@ class GlobalFooter extends React.Component {
 
         const { people } = this.props;
 
+        // separate bride and groom
+        const brideAndGroom = people.filter((person) => {
+
+            // must be involved in wedding
+            if (!person.wedding) return false;
+
+            return  person.wedding.role === 'bride' ||
+                    person.wedding.role === 'groom';
+
+        });
+
         return (
             <footer className="global-footer">
                 {
-                    people ?
-                        people.map((person, index) => {
+                    brideAndGroom ?
+                        brideAndGroom.map((person, index) => {
                             return <SocialLinksList person={person} key={index} />
                         })
                     :

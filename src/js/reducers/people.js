@@ -17,7 +17,7 @@ function people(state = [], action) {
         case 'GET_PEOPLE':
 
             $.ajax({
-                url: '/people',
+                url: '/data/people',
                 success: action.success,
                 error: action.error
             });

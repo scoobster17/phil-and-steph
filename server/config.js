@@ -21,7 +21,7 @@ var app = express();
 app.use( express.static(__dirname + "/../dist/") );
 
 // People details
-app.get('/people', function(req, res) {
+app.get('/data/people', function(req, res) {
     res.sendFile(__dirname + '/data/people.json');
 });
 
