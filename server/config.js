@@ -30,6 +30,11 @@ app.get('/data/people', function(req, res) {
     res.sendFile(__dirname + '/data/people.json');
 });
 
+// Events details
+app.get('/data/events', function(req, res) {
+    res.sendFile(__dirname + '/data/events.json');
+});
+
 /* ************************************************************************** */
 
 /* SERVER */

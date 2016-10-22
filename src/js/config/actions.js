@@ -54,3 +54,26 @@ export function getSocialLinks(people) {
         people
     }
 }
+
+/**
+ * Get details for all events
+ * @return {Object} Action object for use in reducers to update state
+ */
+export function getEvents(success = () => {}, error = () => {}) {
+    return {
+        type: 'GET_EVENTS',
+        success,
+        error
+    }
+}
+
+/**
+ * Update details for all events
+ * @return {Object} Action object for use in reducers to update state
+ */
+export function updateEvents(response) {
+    return {
+        type: 'UPDATE_EVENTS',
+        response
+    }
+}
