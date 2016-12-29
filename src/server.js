@@ -7,45 +7,80 @@
 
 /* DEPENDENCIES */
 
-// node framework
-var express = require('express');
+// Server dependencies
+import path from 'path';
+import { Server } from 'http';
+import Express from 'express';
 
-// sets up environment variables
-require('dotenv').config()
+// React dependencies
+import React from 'react';
+import { renderToString } from 'react-dom/server';
+import { match, RouterContext } from 'react-router';
 
-/* ************************************************************************** */
-
-/* APP SETUP */
-
-var app = express();
-app.use( express.static(__dirname + "/../dist/") );
-
-// News details
-app.get('/data/news', function(req, res) {
-    res.sendFile(__dirname + '/data/news.json');
-});
-
-// People details
-app.get('/data/people', function(req, res) {
-    res.sendFile(__dirname + '/data/people.json');
-});
-
-// Events details
-app.get('/data/events', function(req, res) {
-    res.sendFile(__dirname + '/data/events.json');
-});
+// App dependencies
+import routes from './config/routes';
+import NotFoundPage from './components/pages/404';
 
 /* ************************************************************************** */
 
-/* SERVER */
+/* APP SETUP & CONFIGURATION */
 
-var server = app.listen(process.env.APP_UI_PORT, function() {
+const app = new Express();
+const server = new Server(app);
 
-    var host = server.address().address;
-    var port = server.address().port;
+// configure ejs
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
 
-    console.log("Wedding website app listening @ http://%s:%s", host, port);
+// define folder used for static assets
+app.use(Express.static(path.join(__dirname, 'static')));
 
+/* ************************************************************************** */
+
+/* UNIVERSAL ROUTING AND RENDERING */
+
+app.get('*', (req, res) => {
+	match(
+		{ routes, location: req.url },
+		(err, redirectLocation, renderProps) => {
+
+			// show error if one present
+			if (err) {
+				return res.status(500).send(err.message);
+			}
+
+			// propogate redirect to browser if one present
+			if (redirectLocation) {
+				return res.redirect(302, redirectLocation.pathname + redirectLocation.search);
+			}
+
+			// generate markup for the current route
+			let markup;
+			if (renderProps) {
+				markup = renderToString(<RouterContext {...renderProps} />);
+			} else {
+				markup = renderToString(<NotFoundPage />);
+				res.status(404);
+			}
+
+			// render the index template with the embedded React markup
+			return res.render('index', { markup });
+
+		}
+	);
+});
+
+/* ************************************************************************** */
+
+/* SERVER SETUP AND START */
+
+const port = process.env.PORT || 3000;
+const env = process.env.NODE_ENV || 'production';
+server.listen(port, err => {
+	if (err) {
+		return console.error(err);
+	}
+    console.info(`Wedding website running on http://localhost:${port} [${env}]`);
 });
 
 /* ************************************************************************** */
