@@ -1,10 +1,6 @@
 // React dependencies
 import React from 'react';
 
-// Redux dependencies
-import { connect } from 'react-redux';
-import { mapStateToProps, mapDispatchToProps } from '../../config/mapping.js';
-
 // App dependencies
 import SocialLinksList from '../social-links/list';
 
@@ -12,16 +8,6 @@ import SocialLinksList from '../social-links/list';
  * Global footer component
  */
 class GlobalFooter extends React.Component {
-
-    /**
-     * Fetch people details (contains social links) on component load
-     */
-    componentWillMount() {
-        this.props.getPeople(
-            this.props.updatePeople
-            // this.props.getPeopleError
-        );
-    }
 
     /**
      * Render method for React component to render HTML utilising JSX
@@ -32,7 +18,7 @@ class GlobalFooter extends React.Component {
         const { people } = this.props;
 
         // separate bride and groom
-        const brideAndGroom = people.filter((person) => {
+        const brideAndGroom = people && people.filter((person) => {
 
             // must be involved in wedding
             if (!person.wedding) return false;
@@ -70,4 +56,4 @@ class GlobalFooter extends React.Component {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(GlobalFooter);
+export default GlobalFooter;

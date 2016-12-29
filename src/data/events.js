@@ -1,4 +1,4 @@
-[
+const events = [
 	{
 		"id": 0,
 		"order": 0,
@@ -17,4 +17,6 @@
         	}
         ]
 	}
-]
+];
+
+export default events;

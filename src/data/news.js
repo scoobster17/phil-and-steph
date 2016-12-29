@@ -1,4 +1,4 @@
-[
+const news = [
 	{
 		"id": 0,
 		"timestamp": 1476825385276,
@@ -17,4 +17,6 @@
 		"preview": "This site has finally been updated! New features include the News section, Events section and more&hellip;",
 		"article": "<p>Welcome to the renewed and slightly refreshed version of the PhilAndSteph.co.uk website! Although it may not look all that different, it has been re-built from the ground up!</p><p>More here</p>"
 	}
-]
+];
+
+export default news;

@@ -18,12 +18,12 @@ class SocialLinksList extends React.Component {
         return (
             <section className="socialLinks">
                 <h2>
-                    { person.nickname }
+                    { person && person.nickname }
                     <span className="access">&#39;s Social Media</span>
                 </h2>
                 <ul>
                     {
-                        person.socialLinks.map((link, index) => {
+                        person && person.socialLinks.map((link, index) => {
 
                             let icon = '';
 

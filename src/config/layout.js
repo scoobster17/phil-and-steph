@@ -1,13 +1,9 @@
 // React dependencies
 import React from 'react';
 
-// Redux dependencies
-import { connect } from 'react-redux';
-import { mapStateToProps, mapDispatchToProps } from '../../config/mapping.js';
-
 // App dependencies
-import GlobalHeader from './global-header';
-import GlobalFooter from './global-footer';
+import GlobalHeader from '../components/global/global-header';
+import GlobalFooter from '../components/global/global-footer';
 
 /**
  * Render method for React component to render HTML utilising JSX
@@ -28,4 +24,4 @@ class Layout extends React.Component {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Layout);
+export default Layout;

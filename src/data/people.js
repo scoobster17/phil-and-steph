@@ -1,4 +1,4 @@
-[
+const people = [
 	{
 		"id": 0,
 		"order": 0,
@@ -115,4 +115,6 @@
 			"role": "Groomsman"
 		}
 	}
-]
+];
+
+export default people;
