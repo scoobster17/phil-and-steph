@@ -5,7 +5,7 @@
 @import "utils/_sass-setup";
 
 // reset
-@import "_reset";
+@import "~reset-css/_reset"; // ~ tells webpack to look in node_modules/
 
 // configuration
 @import "config/_fonts";

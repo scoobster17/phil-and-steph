@@ -4,7 +4,8 @@
   "description": "Wedding website for myself and my (future) wife",
   "main": "index.js",
   "scripts": {
-    "start": "node ./server/config.js",
+    "build": "NODE_ENV=production node_modules/.bin/webpack -p",
+    "start": "NODE_ENV=production node_modules/.bin/babel-node --presets 'react,es2015' src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -28,7 +29,14 @@
   "homepage": "https://github.com/scoobster17/phil-and-steph",
   "devDependencies": {
     "babel-loader": "^6.2.10",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
     "http-server": "^0.9.0",
+    "node-sass": "^4.1.1",
+    "reset-css": "^2.2.0",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
     "webpack": "^1.13.3"
   },
   "dependencies": {

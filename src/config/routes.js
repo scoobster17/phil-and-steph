@@ -12,7 +12,6 @@ import NewsPage from '../components/pages/news';
 import ContactPage from '../components/pages/contact';
 import NotFoundPage from '../components/pages/404';
 
-
 const routes = (
     <Route path="/" component={Layout}>
         <IndexRoute component={HomePage} />
