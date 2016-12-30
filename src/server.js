@@ -33,7 +33,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 // define folder used for static assets
-app.use(Express.static(path.join(__dirname, 'static')));
+app.use(Express.static(path.join(__dirname, '..', 'dist')));
 
 /* ************************************************************************** */
 

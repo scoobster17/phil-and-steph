@@ -1,6 +1,13 @@
 ## GIT IGNORE ##
 
+# caches
 babel-cache/
+
+# npm dependencies
 node_modules/
 
+# dist (compiled) files
+dist/
+
+# project files
 *.sublime*

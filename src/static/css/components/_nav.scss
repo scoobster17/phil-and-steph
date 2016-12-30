@@ -1,6 +1,9 @@
 .menuLink {
     float:right;
-    a {
+    button {
+        background: transparent;
+        border: none;
+        color: inherit;
         cursor:pointer;
         display:none;
         padding:20px 10px 20px 15px;
@@ -57,7 +60,7 @@ nav {
     }
 }
 @include mobile {
-    .menuLink a {
+    .menuLink button {
         display:block;
     }
     nav {
