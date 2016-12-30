@@ -2,6 +2,9 @@
 import React from 'react';
 import { Link } from 'react-router';
 
+// App dependencies
+import events from '../../data/events';
+
 /**
  * Events page component; details events happening with Phil & Steph.
  */
@@ -12,9 +15,6 @@ class EventsPage extends React.Component {
      * @return {JSX} Returns the JSX to be rendered by React into HMTL
      */
     render() {
-
-        const { events } = this.props;
-
         return (
             <main>
                 <h1>Events</h1>

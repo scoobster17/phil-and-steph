@@ -97,7 +97,7 @@ const people = [
 		"id": 6,
 		"order": 3,
 		"firstName": "Kayleigh",
-		"lastName": "Smith",
+		"lastName": "",
 		"nickname": "Kay",
 		"title": "Mrs",
 		"wedding": {

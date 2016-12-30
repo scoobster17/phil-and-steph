@@ -3,6 +3,7 @@ import React from 'react';
 
 // App dependencies
 import SocialLinksList from '../social-links/list';
+import people from '../../data/people';
 
 /**
  * Global footer component
@@ -14,8 +15,6 @@ class GlobalFooter extends React.Component {
      * @return {JSX} Returns the JSX to be rendered by React into HMTL
      */
     render() {
-
-        const { people } = this.props;
 
         // separate bride and groom
         const brideAndGroom = people && people.filter((person) => {

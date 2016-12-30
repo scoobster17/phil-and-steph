@@ -1,6 +1,9 @@
 // React dependencies
 import React from 'react';
 
+// App dependencies
+import people from '../../data/people';
+
 /**
  * People page component; details people involved in wedding.
  */
@@ -12,7 +15,6 @@ class PeoplePage extends React.Component {
      */
     render() {
 
-        const { people } = this.props;
         const brideAndGroom = [];
         const bridalParty = [];
 

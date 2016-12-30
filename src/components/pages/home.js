@@ -2,6 +2,9 @@
 import React from 'react';
 import { Link } from 'react-router';
 
+// App dependencies
+import news from '../../data/news';
+
 /**
  * Home page component; default page of app.
  */
@@ -12,9 +15,6 @@ class HomePage extends React.Component {
      * @return {JSX} Returns the JSX to be rendered by React into HMTL
      */
     render() {
-
-        const { news } = this.props;
-
         return (
             <main>
                 <h1 className="access">Welcome to PhilAndSteph.co.uk</h1>
