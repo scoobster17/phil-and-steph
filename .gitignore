@@ -3,8 +3,9 @@
 # caches
 babel-cache/
 
-# npm dependencies
+# npm dependencies / files
 node_modules/
+npm-debug.log
 
 # dist (compiled) files
 dist/
