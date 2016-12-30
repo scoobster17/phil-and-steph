@@ -15,6 +15,7 @@ import NotFoundPage from '../components/pages/404';
 const routes = (
     <Route path="/" component={Layout}>
         <IndexRoute component={HomePage} />
+        <Route path="events" component={EventsPage} />
         <Route path="people" component={PeoplePage} />
         <Route path="people/:personId" component={PeoplePage} />
         <Route path="media" component={MediaPage} />

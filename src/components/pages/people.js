@@ -17,7 +17,7 @@ class PeoplePage extends React.Component {
         const bridalParty = [];
 
         // separate bride and groom
-        people.forEach((person) => {
+        people && people.forEach((person) => {
 
             // only use people involved in wedding
             if (!person.wedding) return false;

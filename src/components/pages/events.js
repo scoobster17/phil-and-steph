@@ -7,13 +7,6 @@ import { Link } from 'react-router';
  */
 class EventsPage extends React.Component {
 
-    componentWillMount() {
-        this.props.getEvents(
-            this.props.updateEvents
-            // this.props.getEventsError
-        );
-    }
-
     /**
      * Render method for React component to render HTML utilising JSX
      * @return {JSX} Returns the JSX to be rendered by React into HMTL

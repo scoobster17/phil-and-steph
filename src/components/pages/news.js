@@ -7,13 +7,6 @@ import { Link } from 'react-router';
  */
 class NewsPage extends React.Component {
 
-    componentWillMount() {
-        this.props.getNews(
-            this.props.updateNews
-            // this.props.getNewsError
-        );
-    }
-
     /**
      * Render method for React component to render HTML utilising JSX
      * @return {JSX} Returns the JSX to be rendered by React into HMTL

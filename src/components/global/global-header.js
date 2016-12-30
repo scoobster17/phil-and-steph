@@ -36,6 +36,32 @@ class GlobalHeader extends React.Component {
                             </Link>
                         </li>
                         <li>
+                            <Link to="/people">
+                                <i className="icon-male"></i>
+                                <i className="icon-female"></i>
+                                People
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/events">
+                                <i className="icon-calendar"></i>
+                                Events
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/media">
+                                <i className="icon-camera"></i>
+                                <i className="icon-video"></i>
+                                Media
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/news">
+                                <i className="icon-th-list"></i>
+                                News
+                            </Link>
+                        </li>
+                        <li>
                             <Link to="/contact">
                                 <i className="icon-phone"></i>
                                 Contact

@@ -46,6 +46,11 @@ app.get('*', (req, res) => {
 
 			// show error if one present
 			if (err) {
+				console.log('');
+				console.log('');
+				console.log('**500 ERROR**');
+				console.log('');
+				console.log('Request URL: ' + req.url);
 				return res.status(500).send(err.message);
 			}
 
