@@ -21,6 +21,8 @@ import { match, RouterContext } from 'react-router';
 import routes from './config/routes';
 import NotFoundPage from './components/pages/404';
 
+require('dotenv').config();
+
 /* ************************************************************************** */
 
 /* APP SETUP & CONFIGURATION */

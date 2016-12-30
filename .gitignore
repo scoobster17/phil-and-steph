@@ -7,8 +7,12 @@ babel-cache/
 node_modules/
 npm-debug.log
 
-# dist (compiled) files
+# dist (client) and build (server) compiled files
+build/
 dist/
+
+# environment files
+.env
 
 # project files
 *.sublime*
