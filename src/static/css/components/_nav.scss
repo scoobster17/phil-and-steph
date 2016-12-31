@@ -6,7 +6,9 @@
         color: inherit;
         cursor:pointer;
         display:none;
-        padding:20px 10px 20px 15px;
+        font-family: 'disney';
+        font-size:1.6em;
+        padding:16px 10px 12px 15px;
     }
 }
 nav {
@@ -42,7 +44,7 @@ nav {
         }
     }
     i {
-        margin-right:5px;
+        margin:0 5px;
         position:relative;
         top:-1px;
     }
