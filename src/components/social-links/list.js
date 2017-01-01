@@ -49,10 +49,10 @@ class SocialLinksList extends React.Component {
 
                             return (
                                 <li className={ link.media.toLowerCase() } key={ index } >
-                                    <Link to={ link.profile }>
+                                    <a href={ link.profile } rel="external" target="_blank">
                                         <i className={ icon }></i>
                                         <span className="access">Find { person.nickname } on </span>{ link.media }
-                                    </Link>
+                                    </a>
                                 </li>
                             )
                         })
