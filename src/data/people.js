@@ -6,6 +6,7 @@ const people = [
 		"lastName": "Gibbins",
 		"nickname": "Phil",
 		"title": "Mr",
+		"portrait": "phil.jpg",
 		"socialLinks": [
 			{
 				"media": "Facebook",
@@ -22,7 +23,36 @@ const people = [
 		],
 		"wedding": {
 			"role": "groom"
-		}
+		},
+		"occupation": "Web Developer",
+		workExamples: [
+			{
+				name: "Ted Baker",
+				link: "www.tedbaker.com"
+			},
+			{
+				name: "T-Mobile"
+			},
+			{
+				name: "Sainsbury's",
+				link: "www.sainsburys.co.uk/groceries"
+			},
+			{
+				name: "Kiddicare",
+				link: "www.kiddicare.com"
+			},
+			{
+				name: "Audi"
+			}
+		],
+		favourites: {
+			sport: "Basketball",
+			film: "Hard to choose one, think I would have to go with Iron Man Trilogy and the Fast & Furious films, even number 3 :)",
+			food: "Barbeque Chicken Pizza"
+		},
+		"interests": [
+			"PlayStation 4"
+		]
 	},
 	{
 		"id": 1,
@@ -31,6 +61,7 @@ const people = [
 		"lastName": "Underdown",
 		"nickname": "Steph",
 		"title": "Ms",
+		"portrait": "steph.jpg",
 		"socialLinks": [
 			{
 				"media": "Facebook",
@@ -47,7 +78,27 @@ const people = [
 		],
 		"wedding": {
 			"role": "bride"
-		}
+		},
+		"occupation": "Teacher",
+		workExamples: [
+			{
+				name: "Reception"
+			},
+			{
+				name: "Year 1"
+			},
+			{
+				name: "Year 2"
+			}
+		],
+		favourites: {
+			sport: "Sport? Don't be silly. Although I have started doing 5km runs with Park Run",
+			film: "ALL DISNEY FILMS (not pixar, classic Disney)",
+			food: "Spaghetti Bolognese with Cheese and Garlic Bread"
+		},
+		"interests": [
+			"Candy Crush"
+		]
 	},
 	{
 		"id": 2,
@@ -56,6 +107,7 @@ const people = [
 		"lastName": "Steadman",
 		"nickname": "Lou",
 		"title": "Mrs",
+		"portrait": "lou.jpg",
 		"wedding": {
 			"role": "Maid Of Honour"
 		}
@@ -67,6 +119,7 @@ const people = [
 		"lastName": "Steadman",
 		"nickname": "Rob",
 		"title": "Mr",
+		"portrait": "rob.jpg",
 		"wedding": {
 			"role": "Groomsman"
 		}
@@ -78,6 +131,7 @@ const people = [
 		"lastName": "",
 		"nickname": "Daz",
 		"title": "Mr",
+		"portrait": "darren.jpg",
 		"wedding": {
 			"role": "Best Man"
 		}
@@ -89,6 +143,7 @@ const people = [
 		"lastName": "Hart",
 		"nickname": "Bobs",
 		"title": "Miss",
+		"portrait": "bobs.jpg",
 		"wedding": {
 			"role": "Bridesmaid"
 		}
@@ -100,6 +155,7 @@ const people = [
 		"lastName": "",
 		"nickname": "Kay",
 		"title": "Mrs",
+		"portrait": "kay.jpg",
 		"wedding": {
 			"role": "Bridesmaid"
 		}
@@ -111,6 +167,7 @@ const people = [
 		"lastName": "Pursglove",
 		"nickname": "Chris",
 		"title": "Mr",
+		"portrait": "chris.jpg",
 		"wedding": {
 			"role": "Groomsman"
 		}
