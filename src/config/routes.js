@@ -6,6 +6,7 @@ import { Route, IndexRoute } from 'react-router';
 import Layout from './layout';
 import HomePage from '../components/pages/home';
 import EventsPage from '../components/pages/events';
+import EventPage from '../components/pages/event';
 import PeoplePage from '../components/pages/people';
 import MediaPage from '../components/pages/media';
 import NewsPage from '../components/pages/news';
@@ -16,6 +17,7 @@ const routes = (
     <Route path="/" component={Layout}>
         <IndexRoute component={HomePage} />
         <Route path="events" component={EventsPage} />
+        <Route path="events/:urlText" component={EventPage} />
         <Route path="people" component={PeoplePage} />
         <Route path="people/:personId" component={PeoplePage} />
         <Route path="media" component={MediaPage} />
