@@ -16,6 +16,32 @@ const events = [
         		"alt": "Phil and Steph in a cute embrace in a kitchen, with Phil burying his head in the side of Steph's head as they both smile widely."
         	}
         ]
+	},
+	{
+		"id": 1,
+		"order": 1,
+		"urlText": "engagement-party",
+		"accessibliltyDescription": "the engagement party",
+		"title": "The Engagement Party",
+		"preview": "The Engagement Party was a great success back in November 2015, with family and friends attending...",
+		"article": {
+			"title": "The Engagement Party",
+			"content": "<section><h2>Frocks on</h2><p>Friends and family were invited to...</p></section></article>"
+        },
+        "pictures": []
+	},
+	{
+		"id": 2,
+		"order": 2,
+		"urlText": "wedding",
+		"accessibliltyDescription": "the wedding",
+		"title": "The Wedding",
+		"preview": "The Wedding is now fast approaching, and is set to be the major event of Phil and Steph's lives this year...",
+		"article": {
+			"title": "The Wedding",
+			"content": "<section><h2>Wedding Day Details</h2><p>Here you can find out all you need to know for the wedding day...</p></section></article>"
+        },
+        "pictures": []
 	}
 ];
 

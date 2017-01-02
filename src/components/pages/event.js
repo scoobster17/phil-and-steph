@@ -6,7 +6,7 @@ import { Link } from 'react-router';
 import events from '../../data/events';
 
 /**
- * Events page component; details events happening with Phil & Steph.
+ * Event page component; details for a single event either as an article or informational page.
  */
 class EventPage extends React.Component {
 

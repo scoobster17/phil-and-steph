@@ -10,6 +10,7 @@ import EventPage from '../components/pages/event';
 import PeoplePage from '../components/pages/people';
 import MediaPage from '../components/pages/media';
 import NewsPage from '../components/pages/news';
+import ArticlePage from '../components/pages/article';
 import ContactPage from '../components/pages/contact';
 import NotFoundPage from '../components/pages/404';
 
@@ -19,9 +20,9 @@ const routes = (
         <Route path="events" component={EventsPage} />
         <Route path="events/:urlText" component={EventPage} />
         <Route path="people" component={PeoplePage} />
-        <Route path="people/:personId" component={PeoplePage} />
         <Route path="media" component={MediaPage} />
         <Route path="news" component={NewsPage} />
+        <Route path="news/:urlText" component={ArticlePage} />
         <Route path="contact" component={ContactPage} />
         <Route path="*" component={NotFoundPage} />
     </Route>

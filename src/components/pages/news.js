@@ -31,7 +31,7 @@ class NewsPage extends React.Component {
                                             __html: item.preview
                                         }}>
                                         </p>
-                                        <Link to={ '/news/' + item.id } className="btn">
+                                        <Link to={ '/news/' + item.urlText } className="btn">
                                             Read more<span className="access"> about { item.accessibliltyDescription }</span>
                                             <i className="icon-right-open"></i>
                                         </Link>
