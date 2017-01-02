@@ -4,6 +4,7 @@ import { Link } from 'react-router';
 
 // App dependencies
 import events from '../../data/events';
+import Comments from '../global/comments';
 
 /**
  * Event page component; details for a single event either as an article or informational page.
@@ -28,6 +29,7 @@ class EventPage extends React.Component {
                         <p dangerouslySetInnerHTML={{
                             __html: event.article.content
                         }}></p>
+                        { event.comments && <Comments /> }
                         <Link to="/events" className="btn">
                             Back to Events
                         </Link>

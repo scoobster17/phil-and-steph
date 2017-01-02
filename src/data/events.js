@@ -15,7 +15,8 @@ const events = [
         		"src": "/img/photos/us/newYears.jpg",
         		"alt": "Phil and Steph in a cute embrace in a kitchen, with Phil burying his head in the side of Steph's head as they both smile widely."
         	}
-        ]
+        ],
+        "comments": true
 	},
 	{
 		"id": 1,
