@@ -1,6 +1,6 @@
 // React dependencies
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, browserHistory } from 'react-router';
 
 // App dependencies
 import events from '../../data/events';
@@ -17,9 +17,17 @@ class EventPage extends React.Component {
      */
     render() {
         const eventUrlText = this.props.params.urlText;
-        const event = events.filter((event) => {
+        const matchingEventArray = events.filter((event) => {
             return event.urlText === eventUrlText;
-        })[0];
+        });
+        let event;
+
+        if (matchingEventArray.length) {
+            event = matchingEventArray[0]
+        } else if (browserHistory) {
+            browserHistory.push('/404');
+        }
+
         return (
             <main>
                 {

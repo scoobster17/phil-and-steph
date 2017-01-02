@@ -24,6 +24,7 @@ const routes = (
         <Route path="news" component={NewsPage} />
         <Route path="news/:urlText" component={ArticlePage} />
         <Route path="contact" component={ContactPage} />
+        <Route path="404" component={NotFoundPage} />
         <Route path="*" component={NotFoundPage} />
     </Route>
 )
