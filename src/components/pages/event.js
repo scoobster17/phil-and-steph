@@ -25,7 +25,7 @@ class EventPage extends React.Component {
         if (matchingEventArray.length) {
             event = matchingEventArray[0]
         } else if (browserHistory) {
-            browserHistory.push('/404');
+            browserHistory.replace('/404');
         }
 
         return (

@@ -1,6 +1,6 @@
 // React dependencies
 import React from 'react';
-import { Link } from 'react-router';
+import { Link, browserHistory } from 'react-router';
 
 // App dependencies
 import news from '../../data/news';
@@ -16,9 +16,16 @@ class ArticlePage extends React.Component {
      */
     render() {
         const articleUrlText = this.props.params.urlText;
-        const article = news.filter((article) => {
+        const matchingArticleArray = news.filter((article) => {
             return article.urlText === articleUrlText;
-        })[0];
+        });
+        let article;
+
+        if (matchingArticleArray.length) {
+            article = matchingArticleArray[0]
+        } else if (browserHistory) {
+            browserHistory.replace('/404');
+        }
         return (
             <main>
                 {
