@@ -6,10 +6,10 @@ class NotFoundPage extends React.Component {
 	render() {
 		return (
 			<main>
-				<h1>404 error; page not found</h1>
+				<h1>Page not found</h1>
 				<p>
-					The page you are looking for does not exist.
-					<Link to="/">Go back to home page</Link>
+					Whoops! You seem to have gotten a bit lost! But because we're kind we'll point you in the right direction.
+					<Link to="/" className="btn">Go back to home page</Link>
 				</p>
 			</main>
 		)
