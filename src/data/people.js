@@ -171,6 +171,18 @@ const people = [
 		"wedding": {
 			"role": "Groomsman"
 		}
+	},
+	{
+		"id": 8,
+		"order": 8,
+		"firstName": "Sheldon",
+		"lastName": "Hart",
+		"nickname": "Sheldo",
+		"title": "Master",
+		"portrait": "sheldon.jpg",
+		"wedding": {
+			"role": "Page boy"
+		}
 	}
 ];
 
