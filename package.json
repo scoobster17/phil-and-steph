@@ -4,8 +4,7 @@
   "description": "Wedding website for myself and my (future) wife",
   "main": "index.js",
   "scripts": {
-    "build-client": "node_modules/.bin/webpack -p --config webpack.client.config.js",
-    "build-server": "node_modules/.bin/webpack -p --config webpack.server.config.js",
+    "build": "node_modules/.bin/webpack -p --config webpack.config.js",
     "watch": "node_modules/.bin/webpack -p --config webpack.config.js --watch --display-modules",
     "start-dev": "node_modules/.bin/nodemon build/server.js --watch ./build",
     "start-prod": "node build/server.js",

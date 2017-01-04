@@ -54,7 +54,13 @@ module.exports = [
 		module: {
 			loaders: [
 				{
-					test: path.join(__dirname, 'src'),
+					test: /\.js$/,
+					exclude: [
+						path.join(__dirname, 'build'),
+						path.join(__dirname, 'dist'),
+						path.join(__dirname, 'src', 'static'),
+						path.join(__dirname, 'src', 'views')
+					],
 					loader: ['babel-loader'],
 					query: {
 						cacheDirectory: 'babel-cache',
@@ -95,7 +101,12 @@ module.exports = [
 		module: {
 			loaders: [
 				{
-					test: path.join(__dirname, 'src'),
+					test: /\.e?js$/,
+					exclude: [
+						path.join(__dirname, 'build'),
+						path.join(__dirname, 'dist'),
+						path.join(__dirname, 'src', 'static')
+					],
 					loader: ['babel-loader'],
 					query: {
 						presets: ['react', 'es2015']
