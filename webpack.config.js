@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const fs = require('fs');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 let nodeModules = {};
 fs.readdirSync('node_modules')
@@ -39,7 +40,10 @@ module.exports = [
 			}),
 			new ExtractTextPlugin('../css/[name].css', {
 				allChunks: true
-			})
+			}),
+			new CopyWebpackPlugin([
+				{from: __dirname + '/src/static/img', to: '../img'}
+			])
 		]
 	},
 
