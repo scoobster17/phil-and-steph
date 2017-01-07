@@ -72,6 +72,22 @@ class GlobalHeader extends React.Component {
             </header>
         )
     }
+
+    componentDidMount() {
+
+        // menu functionality
+        const menu = document.querySelector('.globalNav');
+        const toggle = document.querySelector('.menuLink');
+
+        // temporary until class handling added (joose not jquery)
+        toggle.addEventListener('click', () => {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+        });
+    }
 }
 
 export default GlobalHeader;
