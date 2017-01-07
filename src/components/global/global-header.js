@@ -87,6 +87,16 @@ class GlobalHeader extends React.Component {
                 menu.style.display = 'block';
             }
         });
+
+        const navLinks = menu.querySelectorAll('a');
+        const noOfNavLinks = navLinks.length;
+
+        // close menu on page change
+        for(let i=0; i<noOfNavLinks; i++) {
+            navLinks[i].addEventListener('click', () => {
+                menu.style.display = 'none';
+            });
+        }
     }
 }
 
