@@ -60,6 +60,18 @@ nav {
             margin-left:0;
         }
     }
+    a[href$="media"] {
+        position:relative;
+    }
+    .icon-camera {
+        margin-right:19px;
+        top: 4px;
+    }
+    .icon-video {
+        left:23px;
+        position:absolute;
+        top:16px;
+    }
 }
 @include mobile {
     .menuLink button {

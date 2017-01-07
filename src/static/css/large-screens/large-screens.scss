@@ -4,10 +4,13 @@
 // utilities
 @import "../utils/_sass-setup";
 
-// overwrites
-.global-header {
-	color: red !important;
+nav {
+	ul {
+		display: block !important; // temp until class handling added
+	}
 }
+
+// overwrites
 .weddingCountdown {
 	min-height:500px;
 	> section {

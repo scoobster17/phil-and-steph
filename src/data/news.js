@@ -29,7 +29,7 @@ const news = [
 	{
 		"id": 3,
 		"timestamp": 1476826234727,
-		"title": "Honeymoon site / Wedding Gift List Set Up",
+		"title": "Wedding Gift List Set Up",
 		"urlText": "gift-list-set-up",
 		"accessibiltyDescription": "the gift list being set up",
 		"preview": "We have set up our Wedding Gift List. We don't expect it, but if you feel obliged to get us a wedding gift, find out the details here.",
