@@ -27,7 +27,7 @@ const events = [
 		"preview": "The Engagement Party was a great success back in November 2015, with family and friends attending...",
 		"article": {
 			"title": "The Engagement Party",
-			"content": "<section><h2>Frocks on</h2><p>Friends and family were invited to...</p></section></article>"
+			"content": "<section><h2>Frocks on</h2><p>We held a party to celebrate <del>Steph</del> <ins>our engagement</ins> back in November 2015. Thank you for everyone who attended!</p><p><strong>CALLING ALL PHOTOGRAPHERS!</strong> If you have any photos of the evening We would love to add them to the Engagement Party Image Gallery. Please do send them over! (Preferably originals).</p></section><section><h2>Who was invited</h2><p>We invited family and friends to join us. It was not an open event.</p></section><section><h2>Where was it?</h2><p>We hired the Laindon Community Centre for the evening of Saturday 14<sup>th</sup> November 2015, with guests to arriving from 7pm. Once inside the venue by either of the main entrances, opposite reception are 3 doors amongst toilet doors, the far left one gains entrance to the hall that was hired.</p></section></article>"
         },
         "pictures": []
 	},
