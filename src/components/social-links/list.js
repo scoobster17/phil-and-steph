@@ -19,7 +19,7 @@ class SocialLinksList extends React.Component {
             <section className="socialLinks">
                 <h2>
                     { person && person.nickname }
-                    <span className="access">&#39;s Social Media</span>
+                    <span className="visually-hidden">&#39;s Social Media</span>
                 </h2>
                 <ul>
                     {
@@ -51,7 +51,7 @@ class SocialLinksList extends React.Component {
                                 <li className={ link.media.toLowerCase() } key={ index } >
                                     <a href={ link.profile } rel="external" target="_blank">
                                         <i className={ icon }></i>
-                                        <span className="access">Find { person.nickname } on </span>{ link.media }
+                                        <span className="visually-hidden">Find { person.nickname } on </span>{ link.media }
                                     </a>
                                 </li>
                             )

@@ -1,33 +1,6 @@
 .panel {
-    background:$white;
-    //background:#FFFFEE;
-    overflow:hidden;
-    padding:40px;
-    z-index:0;
+    padding:40px 20px;
     + .panel {
         border-top:2px solid $primaryColour;
-    }
-}
-.panelContent {
-    margin:180px 3% 120px;
-    padding:20px 1%;
-    width:40%;
-    .alternativePanel & {
-        float:right;
-    }
-}
-@include mobile {
-    .panel {
-        min-height:0;
-        padding:15px;
-        position: static;
-    }
-    .panelContent {
-        margin-bottom:0;
-        margin-top:0;
-        width:92%;
-        .pagination {
-            display:none;
-        }
     }
 }

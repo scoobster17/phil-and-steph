@@ -17,20 +17,20 @@ class HomePage extends React.Component {
      */
     render() {
         return (
-            <main>
-                <h1 className="access">Welcome to PhilAndSteph.co.uk</h1>
+            <main className="home">
+                <h1 className="visually-hidden">Welcome to PhilAndSteph.co.uk</h1>
                 <article>
                     <section className="panel weddingCountdown">
-                        <h2 className="access">
+                        <h2 className="visually-hidden">
                             Wedding Countdown
                         </h2>
                         <WeddingCountdown />
-                        <Link to="/events/wedding" className="btnPrimary">
+                        <Link to="/events/wedding" className="btn-primary">
                             All about the Wedding
                             <i className="icon-heart"></i>
                         </Link>
                     </section>
-                    <section className="panel alternativePanel news">
+                    <section className="panel news">
                         <h2>Latest News</h2>
                         <ol>
                             {
@@ -46,7 +46,7 @@ class HomePage extends React.Component {
                                                 }}>
                                                 </p>
                                                 <Link to={ '/news/' + item.urlText } className="btn">
-                                                    Read more<span className="access"> about { item.accessibliltyDescription }</span>
+                                                    Read more<span className="visually-hidden"> about { item.accessibliltyDescription }</span>
                                                     <i className="icon-right-open"></i>
                                                 </Link>
                                             </article>
@@ -55,15 +55,15 @@ class HomePage extends React.Component {
                                 })
                             }
                         </ol>
-                        <Link to="/news" className="btnPrimary">
+                        <Link to="/news" className="btn-primary">
                             See all news
                             <i className="icon-th-list"></i>
                         </Link>
                     </section>
-                    <section className="panel alternativePanel">
+                    <section className="panel">
                         <h2>People</h2>
                         <p>Whether you are a friend or family member of &ldquo;him&rdquo; or &ldquo;her&rdquo;, you can get to know a bit about the couple on our People page. There are also details about the whole bridal party too!</p>
-                        <Link to="/people" className="btnPrimary">
+                        <Link to="/people" className="btn-primary">
                             People
                             <i className="icon-male"></i>
                             <i className="icon-female"></i>
@@ -72,7 +72,7 @@ class HomePage extends React.Component {
                     <section id="wedding" className="panel happilyEngaged">
                         <h2>Photos & Videos</h2>
                         <p>Take a look at a selection of media of the couple and events, including the engagement party!</p>
-                        <Link to="/media" className="btnPrimary">
+                        <Link to="/media" className="btn-primary">
                             Photos &amp; Videos
                             <i className="icon-camera"></i>
                             <i className="icon-video"></i>

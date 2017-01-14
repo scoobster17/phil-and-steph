@@ -1,7 +1,6 @@
 .global-header {
     background:$primaryColour;
-    border-bottom:2px solid $primaryColour;
-    color:$white;
+    left:0;
     min-height:56px;
     position: fixed;
     top:0;
@@ -9,22 +8,11 @@
     z-index:2;
     .homeLink {
         float:left;
-        margin-right:40px;
         a {
+            display:block;
             font-family:$headingFontStack;
             @include fontSize(3);
-            padding:13px 40px;
-        }
-    }
-}
-@include mobile {
-    .global-header {
-        .homeLink {
-            margin-right:0;
-            a {
-                padding-left:15px;
-                padding-right:15px;
-            }
+            padding:13px 15px;
         }
     }
 }

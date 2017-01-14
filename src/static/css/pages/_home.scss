@@ -1,11 +1,16 @@
-.weddingCountdown {
-	text-align: center;
-	text-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
-	> section {
-		margin: 20px 0;
+.home {
+	.panel {
+		text-align: center;
 	}
+	h3,
 	p {
-		margin: 0 auto;
+		text-align: left;
+	}
+}
+.weddingCountdown {
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+	p {
+		text-align: center;
 	}
 	.remaining-time {
 		display: block;
@@ -19,18 +24,20 @@
 			}
 		}
 	}
+	.btn-primary {
+		margin: 30px 0 20px;
+	}
 }
 
 // to be revised
 .news {
-	ol {
-		article {
-			overflow:hidden;
-			padding:20px 0;
-		}
+	overflow: hidden;
+	article {
+		overflow:hidden;
+		padding:20px 0;
 		.btn {
 			float:right;
-			margin-top:5px;
+			margin-top:10px;
 		}
 	}
 }
