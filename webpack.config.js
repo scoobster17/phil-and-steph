@@ -16,7 +16,7 @@ module.exports = [
 		devtool: 'source-map',
 		entry: {
 			'small-screens' : path.join(__dirname, 'src', 'static', 'css', 'small-screens.scss'),
-			'large-screens' : path.join(__dirname, 'src', 'static', 'css', 'large-screens', 'large-screens.scss')
+			'large-screens' : path.join(__dirname, 'src', 'static', 'css', 'large-screens.scss')
 		},
 		output: {
 			path: path.join(__dirname, 'dist', 'css'),

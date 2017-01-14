@@ -12,16 +12,16 @@
 @import "config/_icons";
 
 // global
-@import "global/_common";
+@import "small-screens/global/_common";
 
 // components
-@import "components/_header";
-@import "components/_nav";
-@import "components/_footer";
-@import "components/_buttons";
-// @import "components/_forms";
-@import "components/_panels";
-@import "components/_article-list";
+@import "small-screens/components/_header";
+@import "small-screens/components/_nav";
+@import "small-screens/components/_footer";
+@import "small-screens/components/_buttons";
+// @import "small-screens/components/_forms";
+@import "small-screens/components/_panels";
+@import "small-screens/components/_article-list";
 
 // pages
-@import 'pages/_home';
+@import 'small-screens/pages/_home';
