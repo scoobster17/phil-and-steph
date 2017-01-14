@@ -15,7 +15,7 @@ class ContactPage extends React.Component {
         return (
             <main>
                 <article>
-                    <section>
+                    <section className="panel">
                         <h1>Contact</h1>
                         <p>
                             In future, around the time / after the wedding invitations

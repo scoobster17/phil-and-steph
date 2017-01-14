@@ -32,7 +32,7 @@ class HomePage extends React.Component {
                     </section>
                     <section className="panel news">
                         <h2>Latest News</h2>
-                        <ol>
+                        <ol className="article-list">
                             {
                                 news && news.sort((a, b) => {
                                     return b.timestamp - a.timestamp;
@@ -46,7 +46,7 @@ class HomePage extends React.Component {
                                                 }}>
                                                 </p>
                                                 <Link to={ '/news/' + item.urlText } className="btn">
-                                                    Read more<span className="visually-hidden"> about { item.accessibliltyDescription }</span>
+                                                    Read more<span className="visually-hidden"> about { item.accessibilityDescription }</span>
                                                     <i className="icon-right-open"></i>
                                                 </Link>
                                             </article>

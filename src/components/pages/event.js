@@ -33,10 +33,11 @@ class EventPage extends React.Component {
                 {
                     event &&
                     <article dangerouslySetInnerHTML={{
-                        __html: `<section><h1>${ event.article.title }</h1></section>${ event.article.content }`
-                    }}></article>
+                        __html: `<section class="panel"><h1>${ event.article.title }</h1></section>${ event.article.content }`
+                    }}>
+                    </article>
                 }
-                <aside>
+                <aside className="panel">
                     {
                         event.comments &&
                         <Comments />

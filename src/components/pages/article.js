@@ -31,11 +31,11 @@ class ArticlePage extends React.Component {
                 {
                     article &&
                     <article dangerouslySetInnerHTML={{
-                        __html: `<section><h1>${ article.title }</h1></section>${article.content}`
-                        }}>
+                        __html: `<section class="panel"><h1>${ article.title }</h1></section>${article.content}`
+                    }}>
                     </article>
                 }
-                <aside>
+                <aside className="panel">
                     <Link to="/news" className="btn">
                         Back to News
                     </Link>

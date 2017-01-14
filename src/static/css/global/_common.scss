@@ -21,6 +21,7 @@ h1 {
     @include fontSize(4);
     line-height:1.1;
     margin:0 0 30px;
+    text-decoration:underline;
 }
 h2 {
     font-family:$headingFontStack;

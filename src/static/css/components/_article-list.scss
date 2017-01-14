@@ -1,0 +1,11 @@
+.article-list {
+	overflow: hidden;
+	article {
+		overflow:hidden;
+		padding:20px 0;
+		.btn {
+			float:right;
+			margin-top:10px;
+		}
+	}
+}

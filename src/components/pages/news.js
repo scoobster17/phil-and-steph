@@ -17,13 +17,13 @@ class NewsPage extends React.Component {
     render() {
         return (
             <main>
-                <section>
+                <section className="panel">
                     <h1>News</h1>
                     <p>Here you can find out the latest news happening with the wedding.</p>
                 </section>
-                <section>
+                <section className="panel">
                     <h2>News Articles</h2>
-                    <ol>
+                    <ol className="article-list">
                         {
                             news && news.sort((a, b) => {
                                 return b.timestamp - a.timestamp;
@@ -37,7 +37,7 @@ class NewsPage extends React.Component {
                                             }}>
                                             </p>
                                             <Link to={ '/news/' + item.urlText } className="btn">
-                                                Read more<span className="access"> about { item.accessibliltyDescription }</span>
+                                                Read more<span className="visually-hidden"> about { item.accessibilityDescription }</span>
                                                 <i className="icon-right-open"></i>
                                             </Link>
                                         </article>

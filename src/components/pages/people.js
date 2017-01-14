@@ -36,7 +36,7 @@ class PeoplePage extends React.Component {
         return (
             <main>
                 <article>
-                    <section>
+                    <section className="panel">
                         <h1>People</h1>
                         <p>
                             Whether you are a friend or family member of ‘him” or ‘her”, get to know a bit about the couple here. You never know, if you do think you know them, you might find out something new! For instance, did you know Phil is a massive Iron Man fan? Or that Steph is ginger?
@@ -45,7 +45,7 @@ class PeoplePage extends React.Component {
                             You can also find out about the bridal party, featuring the best man, the maid of honour, groomsmen and bridesmaids.
                         </p>
                     </section>
-                    <section>
+                    <section className="panel">
                         <h2>The Bride &amp; Groom</h2>
                         <blockquote>
                             <p>
@@ -141,7 +141,7 @@ class PeoplePage extends React.Component {
                             }
                         </ul>
                     </section>
-                    <section>
+                    <section className="panel">
                         <h2>The Bridal Party</h2>
                         <ul>
                             {
@@ -152,7 +152,7 @@ class PeoplePage extends React.Component {
                                     return (
                                         <li key={index}>
                                             <dl>
-                                                <img src={ '/img/people/portraits/' + person.portrait } alt={ 'portrait of ' + person.firstName } width="260" height="260" />
+                                                <img src={ '/img/people/portraits/' + person.portrait } alt={ 'portrait of ' + person.firstName } />
                                                 <dt>Role in the wedding</dt>
                                                     <dd>
                                                         <h3>
