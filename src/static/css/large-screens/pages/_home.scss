@@ -1,0 +1,21 @@
+.weddingCountdown {
+	margin-top: 125px;
+	min-height:400px;
+    p {
+        margin: 0 auto;
+    }
+	.remaining-time {
+		@include fontSize(8);
+		span {
+			&:nth-child(4) {
+				min-width: 145px;
+				text-align:left;
+			}
+		}
+	}
+}
+.clearfix-small-only:after {
+	content: none;
+	clear:none;
+	display:inline;
+}

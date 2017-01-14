@@ -14,7 +14,7 @@ class WeddingCountdown extends React.Component {
     	return (
 	    	<p>
 	            <span id="remaining-time" className="remaining-time">
-	                Ages&nbsp;
+	                Ages&hellip;&nbsp;
 	            </span>
 	            left until the wedding!
 	        </p>

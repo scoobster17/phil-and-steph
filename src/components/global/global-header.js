@@ -48,25 +48,25 @@ class GlobalHeader extends React.Component {
                                 Events
                             </Link>
                         </li>
-                        <li>
+                        {/*<li>
                             <Link to="/media">
                                 <i className="icon-camera"></i>
                                 <i className="icon-video"></i>
                                 Media
                             </Link>
-                        </li>
+                        </li>*/}
                         <li>
                             <Link to="/news">
                                 <i className="icon-th-list"></i>
                                 News
                             </Link>
                         </li>
-                        <li>
+                        {/*<li>
                             <Link to="/contact">
                                 <i className="icon-phone"></i>
                                 Contact
                             </Link>
-                        </li>
+                        </li>*/}
                     </ul>
                 </nav>
             </header>

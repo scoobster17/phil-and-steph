@@ -2,10 +2,9 @@
     .socialLinks {
         float:left;
         margin-top:10px;
-        width:49.5%;
+        width:45.5%;
         &:first-child {
             margin-left:4%;
-            width:45.5%;
         }
         h2 {
             @include fontSize(2.6);

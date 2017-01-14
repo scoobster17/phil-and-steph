@@ -4,167 +4,24 @@
 // utilities
 @import "utils/_sass-setup";
 
-nav {
-	ul {
-		display: block !important; // temp until class handling added
-	}
-}
+// reset - included in mobile CSS
+// @import "~reset-css/_reset"; // ~ tells webpack to look in node_modules/
 
-// headings
-h1 {
-    @include fontSize(5);
-    line-height: 1.3;
-    margin:0 0 40px;
-}
-h2 {
-    @include fontSize(3.4);
-    margin:0 0 30px;
-}
+// configuration - included in mobile CSS
+// @import "config/_fonts";
+// @import "config/_icons";
 
-// copy
-p {
-    + p,
-    + a,
-    + dl {
-        margin-top:30px;
-    }
-}
+// global
+@import "large-screens/global/_common";
 
-// header
-.global-header {
-    .homeLink {
-        margin-right:40px;
-        a {
-            padding-left:40px;
-            padding-right:40px;
-        }
-    }
-}
+// components
+@import "large-screens/components/_header";
+@import "large-screens/components/_nav";
+@import "large-screens/components/_footer";
+// @import "large-screens/components/_buttons";
+// @import "large-screens/components/_forms";
+@import "large-screens/components/_panels";
+// @import "large-screens/components/_article-list";
 
-// nav
-.menuLink {
-    button {
-        display:none;
-    }
-}
-nav {
-    ul {
-        float:left;
-    }
-    li {
-        + li {
-            margin-left:10px;
-        }
-    }
-    a {
-        &:hover,
-        &:focus {
-            background:$white;
-            color:$primaryColour;
-            .icon-male {
-                color:#1E1E85;
-            }
-            .icon-female {
-                color:#B526B0;
-            }
-            .icon-heart {
-                color:#A60319;
-            }
-        }
-    }
-    .globalNav {
-        background: $primaryColour;
-        position:absolute;
-        width:100%;
-        li {
-            float:none;
-            + li {
-                border-top:1px solid $white;
-                margin-left:0;
-            }
-        }
-        .icon-male {
-            margin-left:-8px;
-        }
-    }
-    .showMenu {
-        display:block;
-    }
-}
-
-// footer
-.global-footer {
-    .socialLinks {
-        h2 {
-            float:left;
-            margin:2px 1%;
-            min-width:60px;
-            width:12.5%;
-        }
-        ul {
-            float:left;
-            overflow: hidden;
-            width:84.5%;
-        }
-        li {
-            float:left;
-        }
-        a {
-            &:hover,
-            &:focus {
-                background:$white;
-                border:0;
-                @include borderRadius(10px);
-                color:$primaryColour;
-            }
-        }
-        @each $socialMedia, $socialMediaColour in (facebook, $facebookColour),
-                                                  (twitter, $twitterColour),
-                                                  (pinterest, $pinterestColour) {
-            .#{$socialMedia} {
-                &:hover,
-                &.focus {
-                    i {
-                        color:$socialMediaColour;
-                    }
-                }
-            }
-        }
-    }
-    .siteDetails {
-        overflow:hidden;
-        p {
-            float:left;
-        }
-    }
-}
-
-// panels
-.panel {
-    padding:40px;
-}
-
-// overwrites
-.weddingCountdown {
-	min-height:500px;
-	> section {
-		margin-top: 125px;
-	}
-    p {
-        margin: 0 auto;
-    }
-	.remaining-time {
-		@include fontSize(8);
-		span {
-			&:nth-child(4) {
-				min-width: 145px;
-				text-align:left;
-			}
-		}
-	}
-}
-.clearfix-small-only:after {
-	content: none;
-	clear:none;
-	display:inline;
-}
+// pages
+@import 'large-screens/pages/_home';
