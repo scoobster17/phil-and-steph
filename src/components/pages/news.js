@@ -17,30 +17,36 @@ class NewsPage extends React.Component {
     render() {
         return (
             <main>
-                <h1>News</h1>
-                <ol>
-                    {
-                        news && news.sort((a, b) => {
-                            return b.timestamp - a.timestamp;
-                        }).map((item, index) => {
-                            return (
-                                <li key={ index }>
-                                    <article>
-                                        <h3>{ item.title }</h3>
-                                        <p dangerouslySetInnerHTML={{
-                                            __html: item.preview
-                                        }}>
-                                        </p>
-                                        <Link to={ '/news/' + item.urlText } className="btn">
-                                            Read more<span className="access"> about { item.accessibliltyDescription }</span>
-                                            <i className="icon-right-open"></i>
-                                        </Link>
-                                    </article>
-                                </li>
-                            )
-                        })
-                    }
-                </ol>
+                <section>
+                    <h1>News</h1>
+                    <p>Here you can find out the latest news happening with the wedding.</p>
+                </section>
+                <section>
+                    <h2>News Articles</h2>
+                    <ol>
+                        {
+                            news && news.sort((a, b) => {
+                                return b.timestamp - a.timestamp;
+                            }).map((item, index) => {
+                                return (
+                                    <li key={ index }>
+                                        <article>
+                                            <h3>{ item.title }</h3>
+                                            <p dangerouslySetInnerHTML={{
+                                                __html: item.preview
+                                            }}>
+                                            </p>
+                                            <Link to={ '/news/' + item.urlText } className="btn">
+                                                Read more<span className="access"> about { item.accessibliltyDescription }</span>
+                                                <i className="icon-right-open"></i>
+                                            </Link>
+                                        </article>
+                                    </li>
+                                )
+                            })
+                        }
+                    </ol>
+                </section>
             </main>
         )
     }

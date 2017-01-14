@@ -28,22 +28,24 @@ class EventsPage extends React.Component {
                 </section>
                 <section>
                     <h2>Events List</h2>
-                    <ul>
+                    <ol>
                         {
                             events && events.map((event, index) => {
                                 return (
                                     <li key={ index }>
-                                        <h2>{ event.title }</h2>
-                                        <p>{ event.preview }</p>
-                                        <Link to={ '/events/' + event.urlText } className="btn">
-                                            Read more<span className="access"> about { event.accessibliltyDescription }</span>
-                                            <i className="icon-right-open"></i>
-                                        </Link>
+                                        <article>
+                                            <h2>{ event.title }</h2>
+                                            <p>{ event.preview }</p>
+                                            <Link to={ '/events/' + event.urlText } className="btn">
+                                                Read more<span className="access"> about { event.accessibliltyDescription }</span>
+                                                <i className="icon-right-open"></i>
+                                            </Link>
+                                        </article>
                                     </li>
                                 )
                             })
                         }
-                    </ul>
+                    </ol>
                 </section>
             </main>
         )

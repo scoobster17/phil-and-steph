@@ -32,17 +32,19 @@ class EventPage extends React.Component {
             <main>
                 {
                     event &&
-                    <section>
-                        <h1>{ event.article.title }</h1>
-                        <p dangerouslySetInnerHTML={{
-                            __html: event.article.content
-                        }}></p>
-                        { event.comments && <Comments /> }
-                        <Link to="/events" className="btn">
-                            Back to Events
-                        </Link>
-                    </section>
+                    <article dangerouslySetInnerHTML={{
+                        __html: `<section><h1>${ event.article.title }</h1></section>${ event.article.content }`
+                    }}></article>
                 }
+                <aside>
+                    {
+                        event.comments &&
+                        <Comments />
+                    }
+                    <Link to="/events" className="btn">
+                        Back to Events
+                    </Link>
+                </aside>
             </main>
         )
     }

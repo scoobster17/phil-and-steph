@@ -14,15 +14,44 @@ class MediaPage extends React.Component {
 
         return (
             <main>
-                <article className="panel">
+                <section>
+                    <h1>Photos &amp; Videos</h1>
+                    <p>Photos & Videos are coming soon!</p>
+                    <h2>We want your photos &amp; videos!</h2>
+                    <p>If you have any photos or videos of the lovely couple, whether it&#39;s from the engagement party or another random time, please do send them on to either Phil or Stephanie, and you may even see your handywork on this site!</p>
+                    <p>Please send in high resolution, full size, original quality images (no judgements made!) and Phil can photoshop them to look all sparkly if needs be.</p>
+                    <p>Even if you think they&apos;re no good, you&#39;d be surprised how they can turn out!</p>
+                </section>
+                {/*
                     <section>
-                        <h1>Photos &amp; Videos</h1>
-                        <h2>We want your photos &amp; videos!</h2>
-                        <p>If you have any photos or videos of the lovely couple, whether it&#39;s from the engagement party or another random time, please do send them on to either Phil or Stephanie, and you may even see your handywork on this site!</p>
-                        <p>Please send in high resolution, full size, original quality images (no judgements made!) and Phil can photoshop them to look all sparkly if needs be.</p>
-                        <p>Even if you think they&apos;re no good, you&#39;d be surprised how they can turn out!</p>
+                        <h2>Events with Photos</h2>
+                        <ol>
+                            <li>
+                                <article>
+                                    <header>
+                                        Accordion Header
+                                    </header>
+                                    <section>
+                                        <ul>
+                                            <li>
+                                                <a href="#photos-1">Photos</a>
+                                            </li>
+                                            <li>
+                                                <a href="#videos-1">Videos</a>
+                                            </li>
+                                        </ul>
+                                        <section id="photos-1">
+                                            Photos tab
+                                        </section>
+                                        <section id="videos-1">
+                                            Videos tab
+                                        </section>
+                                    </section>
+                                </article>
+                            </li>
+                        </ol>
                     </section>
-                </article>
+                */}
             </main>
         )
     }

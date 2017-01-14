@@ -19,8 +19,8 @@ class HomePage extends React.Component {
         return (
             <main>
                 <h1 className="access">Welcome to PhilAndSteph.co.uk</h1>
-                <article className="panel weddingCountdown">
-                    <section>
+                <article>
+                    <section className="panel weddingCountdown">
                         <h2 className="access">
                             Wedding Countdown
                         </h2>
@@ -30,9 +30,7 @@ class HomePage extends React.Component {
                             <i className="icon-heart"></i>
                         </Link>
                     </section>
-                </article>
-                <article className="panel alternativePanel news">
-                    <section className="panelContent">
+                    <section className="panel alternativePanel news">
                         <h2>Latest News</h2>
                         <ol>
                             {
@@ -62,9 +60,7 @@ class HomePage extends React.Component {
                             <i className="icon-th-list"></i>
                         </Link>
                     </section>
-                </article>
-                <article className="panel alternativePanel">
-                    <section className="panelContent">
+                    <section className="panel alternativePanel">
                         <h2>People</h2>
                         <p>Whether you are a friend or family member of &ldquo;him&rdquo; or &ldquo;her&rdquo;, you can get to know a bit about the couple on our People page. There are also details about the whole bridal party too!</p>
                         <Link to="/people" className="btnPrimary">
@@ -73,9 +69,7 @@ class HomePage extends React.Component {
                             <i className="icon-female"></i>
                         </Link>
                     </section>
-                </article>
-                <article id="wedding" className="panel happilyEngaged">
-                    <section className="panelContent">
+                    <section id="wedding" className="panel happilyEngaged">
                         <h2>Photos & Videos</h2>
                         <p>Take a look at a selection of media of the couple and events, including the engagement party!</p>
                         <Link to="/media" className="btnPrimary">

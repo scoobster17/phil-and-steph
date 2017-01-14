@@ -30,16 +30,16 @@ class ArticlePage extends React.Component {
             <main>
                 {
                     article &&
-                    <section>
-                        <h1>{ article.title }</h1>
-                        <p dangerouslySetInnerHTML={{
-                            __html: article.content
-                        }}></p>
-                        <Link to="/news" className="btn">
-                            Back to News
-                        </Link>
-                    </section>
+                    <article dangerouslySetInnerHTML={{
+                        __html: `<section><h1>${ article.title }</h1></section>${article.content}`
+                        }}>
+                    </article>
                 }
+                <aside>
+                    <Link to="/news" className="btn">
+                        Back to News
+                    </Link>
+                </aside>
             </main>
         )
     }
