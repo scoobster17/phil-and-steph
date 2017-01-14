@@ -17,3 +17,8 @@ to [Webpack](https://webpack.github.io/) also.
 [https://scotch.io/tutorials/react-on-the-server-for-beginners-build-a-universal-react-and-node-app](https://scotch.io/tutorials/react-on-the-server-for-beginners-build-a-universal-react-and-node-app)
 
 ** LIVE version not yet using this repository **
+
+## Dependencies
+
+[Node](https://nodejs.org/en/) understanding ES2015 syntax is a must to get this
+site running, for the Webpack build to run. I have been running with version ```6.3.1```.
