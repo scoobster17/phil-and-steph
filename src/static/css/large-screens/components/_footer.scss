@@ -1,0 +1,45 @@
+.global-footer {
+    .socialLinks {
+        h2 {
+            float:left;
+            margin:2px 1%;
+            min-width:60px;
+            width:12.5%;
+        }
+        ul {
+            float:left;
+            overflow: hidden;
+            width:84.5%;
+        }
+        li {
+            float:left;
+        }
+        a {
+            &:hover,
+            &:focus {
+                background:$white;
+                border:0;
+                @include borderRadius(10px);
+                color:$primaryColour;
+            }
+        }
+        @each $socialMedia, $socialMediaColour in (facebook, $facebookColour),
+                                                  (twitter, $twitterColour),
+                                                  (pinterest, $pinterestColour) {
+            .#{$socialMedia} {
+                &:hover,
+                &.focus {
+                    i {
+                        color:$socialMediaColour;
+                    }
+                }
+            }
+        }
+    }
+    .siteDetails {
+        overflow:hidden;
+        p {
+            float:left;
+        }
+    }
+}

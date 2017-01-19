@@ -1,0 +1,19 @@
+// headings
+h1 {
+    @include fontSize(5);
+    line-height: 1.3;
+    margin:0 0 40px;
+}
+h2 {
+    @include fontSize(3.4);
+    margin:0 0 30px;
+}
+
+// copy
+p {
+    + p,
+    + a,
+    + dl {
+        margin-top:30px;
+    }
+}

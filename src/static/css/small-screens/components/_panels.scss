@@ -1,0 +1,6 @@
+.panel {
+    padding:40px 20px;
+    + .panel {
+        border-top:2px solid $primaryColour;
+    }
+}

@@ -1,0 +1,18 @@
+.global-header {
+    background:$primaryColour;
+    left:0;
+    min-height:56px;
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index:2;
+    .homeLink {
+        float:left;
+        a {
+            display:block;
+            font-family:$headingFontStack;
+            @include fontSize(3);
+            padding:13px 15px;
+        }
+    }
+}

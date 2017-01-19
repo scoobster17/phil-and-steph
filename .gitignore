@@ -1,7 +1,19 @@
 ## GIT IGNORE ##
 
-node_modules/
+# caches
+babel-cache/
 
+# npm dependencies / files
+node_modules/
+npm-debug.log
+
+# dist (client) and build (server) compiled files
+build/
+dist/
+
+# environment files
 .env
 
+# project files
 *.sublime*
+srcAssets/

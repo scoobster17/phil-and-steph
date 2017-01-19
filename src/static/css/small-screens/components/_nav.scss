@@ -1,0 +1,62 @@
+// menu toggle
+.menuLink {
+    float:right;
+    button {
+        font-family: $headingFontStack;
+        font-size:1.6em;
+        padding:16px 10px 12px 15px;
+    }
+}
+
+// nav list
+nav {
+    clear:both; // clear logo and toggle on mobile
+    position:relative; // for mobile pop-over menu
+    ul {
+        overflow:hidden;
+    }
+}
+.globalNav {
+    border:1px solid $white;
+    border-width:2px 0 0;
+    display:none; // to hide menu on load; TODO - class handling this
+    li {
+        float:left;
+        width: 100%;
+    }
+    a {
+        border:1px solid $white;
+        border-width:0 0 2px;
+        display: block;
+        padding:20px 10px;
+    }
+    i {
+        margin:0 5px;
+        position:relative;
+        top:-1px;
+    }
+    .icon-male {
+        margin-right:-5px;
+        &:before {
+            margin-right:0;
+        }
+    }
+    .icon-female {
+        margin-left:-5px;
+        &:before {
+            margin-left:0;
+        }
+    }
+    a[href$="media"] {
+        position:relative;
+    }
+    .icon-camera {
+        margin-right:19px;
+        top: 4px;
+    }
+    .icon-video {
+        left:23px;
+        position:absolute;
+        top:16px;
+    }
+}

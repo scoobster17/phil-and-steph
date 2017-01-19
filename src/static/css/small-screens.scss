@@ -1,0 +1,27 @@
+// encoding
+@charset "UTF-8";
+
+// utilities
+@import "utils/_sass-setup";
+
+// reset
+@import "~reset-css/_reset"; // ~ tells webpack to look in node_modules/
+
+// configuration
+@import "config/_fonts";
+@import "config/_icons";
+
+// global
+@import "small-screens/global/_common";
+
+// components
+@import "small-screens/components/_header";
+@import "small-screens/components/_nav";
+@import "small-screens/components/_footer";
+@import "small-screens/components/_buttons";
+// @import "small-screens/components/_forms";
+@import "small-screens/components/_panels";
+@import "small-screens/components/_article-list";
+
+// pages
+@import 'small-screens/pages/_home';

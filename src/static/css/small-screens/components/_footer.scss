@@ -1,0 +1,30 @@
+.global-footer {
+    .socialLinks {
+        float:left;
+        margin-top:10px;
+        width:45.5%;
+        &:first-child {
+            margin-left:4%;
+        }
+        h2 {
+            @include fontSize(2.6);
+            margin:0 0 2px;
+            text-decoration: none;
+        }
+        a {
+            display: block;
+            padding:10px;
+        }
+        i {
+            margin-right:5px;
+        }
+    }
+    .siteDetails {
+        clear:both;
+        padding:10px 4%;
+        a {
+            display:inline-block;
+            padding:4px 0;
+        }
+    }
+}

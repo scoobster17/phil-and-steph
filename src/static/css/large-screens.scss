@@ -1,0 +1,27 @@
+// encoding
+@charset "UTF-8";
+
+// utilities
+@import "utils/_sass-setup";
+
+// reset - included in mobile CSS
+// @import "~reset-css/_reset"; // ~ tells webpack to look in node_modules/
+
+// configuration - included in mobile CSS
+// @import "config/_fonts";
+// @import "config/_icons";
+
+// global
+@import "large-screens/global/_common";
+
+// components
+@import "large-screens/components/_header";
+@import "large-screens/components/_nav";
+@import "large-screens/components/_footer";
+// @import "large-screens/components/_buttons";
+// @import "large-screens/components/_forms";
+@import "large-screens/components/_panels";
+// @import "large-screens/components/_article-list";
+
+// pages
+@import 'large-screens/pages/_home';

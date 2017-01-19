@@ -1,0 +1,22 @@
+button {
+	background: transparent;
+    border: none;
+    color: inherit;
+	cursor: pointer;
+}
+.btn {
+	-webkit-appearance:none; // iOS fix
+	border:2px solid $primaryColour;
+	border-radius:3px;
+	display:inline-block;
+	padding:16px 25px;
+	i {
+		margin-left:10px;
+		margin-right:-10px;
+	}
+}
+.btn-primary {
+	@extend .btn;
+	background:$primaryColour;
+	color: $tertiaryTextColour;
+}

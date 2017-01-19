@@ -1,0 +1,105 @@
+// Base Styles
+html {
+    font-size:62.5%; // rem basis
+}
+body {
+    background:$primaryColour;
+    color: $white;
+    font-family:$primaryFontStack;
+}
+
+// main page content
+main {
+    background:$white;
+    color: $primaryTextColour;
+    padding-top:60px;
+}
+
+// headings
+h1 {
+    font-family:$headingFontStack;
+    @include fontSize(4);
+    line-height:1.1;
+    margin:0 0 30px;
+    text-decoration:underline;
+}
+h2 {
+    font-family:$headingFontStack;
+    @include fontSize(3);
+    margin:0 0 30px;
+    text-decoration:underline;
+}
+h3 {
+    font-family:$headingFontStack;
+    @include fontSize(2.5);
+    margin:0 0 10px;
+    text-decoration: underline;
+}
+
+// copy
+p {
+    @include fontSize(1.6);
+    line-height:1.5;
+    max-width:44em;
+    max-width:70rem;
+    + p,
+    + a,
+    + dl {
+        margin-top:15px;
+    }
+}
+strong {
+    font-weight: bold;
+}
+
+// links
+a {
+    color: inherit;
+    @include fontSize(1.6);
+    text-decoration:none;
+}
+.textLink {
+    text-decoration: underline;
+    &:hover,
+    &:focus {
+        text-decoration:none;
+    }
+}
+
+// lists
+li {
+    @include fontSize(1.6);
+    @include addParentSelector('.textList', &) {
+        padding-bottom: 5px;
+        &:before {
+            content: '\e824';
+            font-family: fontello;
+            margin-right:10px;
+        }
+    }
+}
+dt {
+    @include fontSize(1.6);
+    font-weight:bold;
+    margin:0 0 5px;
+}
+dd {
+    @include fontSize(1.6);
+    margin:0 0 20px;
+}
+
+// accessibility
+.visually-hidden {
+    position:absolute;
+    left: $accessLeft;
+}
+
+// overrides
+.hidden {
+    display:none;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -1,0 +1,36 @@
+// home page
+.home {
+	.panel {
+		text-align: center;
+	}
+	h3,
+	p {
+		text-align: left;
+	}
+	.btn-primary {
+		margin: 30px 0 0;
+	}
+}
+
+// wedding countdown
+.weddingCountdown {
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+	p {
+		text-align: center;
+	}
+	.remaining-time {
+		display: block;
+		font-family: $headingFontStack;
+		@include fontSize(6);
+		font-weight: bold;
+		span {
+			&:nth-child(4) {
+				display:inline-block;
+				min-width: 103px;
+			}
+		}
+	}
+	.btn-primary {
+		margin-bottom: 20px;
+	}
+}
