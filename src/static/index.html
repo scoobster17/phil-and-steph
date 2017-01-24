@@ -4,6 +4,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home &ndash; PhilAndSteph.co.uk</title>
+
+    <!-- Anti clickjacking handler -->
+    <style id="antiClickjack">body{display:none !important;}</style>
+	<script type="text/javascript">
+		if (self === top) {
+			var antiClickjack = document.getElementById("antiClickjack");
+			antiClickjack.parentNode.removeChild(antiClickjack);
+		} else {
+			top.location = self.location;
+		}
+	</script>
+
     <link rel="stylesheet" type="text/css" href="/css/small-screens.css">
     <link rel="stylesheet" type="text/css" href="/css/large-screens.css" media="(min-width: 768px) and (min-device-width: 768px)">
 </head>

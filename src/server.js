@@ -11,6 +11,7 @@
 import path from 'path';
 import { Server } from 'http';
 import Express from 'express';
+const xFrameOptions = require('x-frame-options')
 
 // React dependencies
 import React from 'react';
@@ -30,6 +31,7 @@ require('dotenv').config();
 const app = new Express();
 const server = new Server(app);
 
+
 // configure ejs
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
@@ -37,11 +39,18 @@ app.set('views', path.join(__dirname, 'views'));
 // define folder used for static assets
 app.use(Express.static(path.join(__dirname, '..', 'dist')));
 
+// utilising X-FRAME-OPTIONS
+app.use(xFrameOptions());
+
 /* ************************************************************************** */
 
 /* UNIVERSAL ROUTING AND RENDERING */
 
 app.get('*', (req, res) => {
+
+	// prevent clickjacking by adding HTTP Header for X-FRAME-OPTIONS
+	res.get('X-Frame-Options') // === 'Deny'
+
 	match(
 		{ routes, location: req.url },
 		(err, redirectLocation, renderProps) => {

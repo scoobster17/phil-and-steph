@@ -53,6 +53,7 @@
     "express": "^4.14.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
-    "react-router": "^2.6.1"
+    "react-router": "^2.6.1",
+    "x-frame-options": "^1.0.0"
   }
 }
