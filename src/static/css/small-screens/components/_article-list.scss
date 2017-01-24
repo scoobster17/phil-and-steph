@@ -8,4 +8,38 @@
 			margin-top:10px;
 		}
 	}
+	.hasImagery {
+		img {
+			float: left;
+			margin: 8px 0 0;
+			width: 47%;
+		}
+		p {
+			clear:right;
+			float:right;
+			width:47%;
+		}
+		.btn {
+			clear:right;
+			float:right;
+		}
+	}
+}
+
+@media (min-width: 500px) {
+	.article-list {
+		.hasImagery {
+			h3 {
+				float:right;
+				width:74%;
+			}
+			img {
+				margin-top:0;
+				width: 20%;
+			}
+			p {
+				width: 74%;
+			}
+		}
+	}
 }

@@ -1,0 +1,26 @@
+.article-list {
+	margin: 0 auto;
+	max-width: 44em;
+	max-width: 70rem;
+	.hasImagery {
+		min-height: 170px;
+		padding-left:150px;
+		position: relative;
+		h3 {
+			float:none;
+			margin-bottom:20px;
+			width: 100%;
+		}
+		img {
+			left:0;
+			position:absolute;
+			top:20px;
+			width: 130px;
+		}
+		p {
+			float:none;
+			margin-bottom:20px;
+			width: 100%;
+		}
+	}
+}

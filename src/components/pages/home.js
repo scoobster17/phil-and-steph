@@ -37,10 +37,15 @@ class HomePage extends React.Component {
                                 news && news.sort((a, b) => {
                                     return b.timestamp - a.timestamp;
                                 }).map((item, index) => {
+                                    const articleHasImagery = (item.img && item.img.src);
                                     return (
                                         <li key={ index }>
-                                            <article>
+                                            <article className={ articleHasImagery ? 'hasImagery' : '' }>
                                                 <h3>{ item.title }</h3>
+                                                {
+                                                    articleHasImagery &&
+                                                    <img src={ '/img/' + item.img.src } alt={ item.img.alt } />
+                                                }
                                                 <p dangerouslySetInnerHTML={{
                                                     __html: item.preview
                                                 }}>

@@ -51,7 +51,7 @@
     "react-router": "^2.6.1",
     "reset-css": "^2.2.0",
     "sass-loader": "^4.1.1",
-    "x-frame-options": "^1.0.0",
-    "webpack": "^1.13.3"
+    "webpack": "^1.13.3",
+    "x-frame-options": "^1.0.0"
   }
 }
