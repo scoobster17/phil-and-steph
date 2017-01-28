@@ -22,7 +22,7 @@ const people = [
 			}
 		],
 		"wedding": {
-			"role": "groom"
+			"role": "Groom"
 		},
 		"occupation": "Web Developer",
 		workExamples: [
@@ -77,7 +77,7 @@ const people = [
             }
 		],
 		"wedding": {
-			"role": "bride"
+			"role": "Bride"
 		},
 		"occupation": "Teacher",
 		workExamples: [
@@ -181,7 +181,7 @@ const people = [
 		"title": "Master",
 		"portrait": "sheldon.jpg",
 		"wedding": {
-			"role": "Page boy"
+			"role": "Page Boy"
 		}
 	}
 ];

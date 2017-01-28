@@ -24,8 +24,8 @@ class PeoplePage extends React.Component {
             // only use people involved in wedding
             if (!person.wedding) return false;
 
-            if (person.wedding.role === 'bride' ||
-                person.wedding.role === 'groom') {
+            if (person.wedding.role.toLowerCase() === 'bride' ||
+                person.wedding.role.toLowerCase() === 'groom') {
                 brideAndGroom.push(person);
             } else {
                 bridalParty.push(person);
@@ -35,7 +35,7 @@ class PeoplePage extends React.Component {
 
         return (
             <main>
-                <article>
+                <article className="people">
                     <section className="panel">
                         <h1>People</h1>
                         <p>
@@ -59,7 +59,7 @@ class PeoplePage extends React.Component {
                                 </cite>
                             </footer>
                         </blockquote>
-                        <ul>
+                        <ul className="brideAndGroom">
                             {
                                 brideAndGroom && brideAndGroom.sort((a, b) => {
                                     return a.order - b.order;
@@ -67,9 +67,9 @@ class PeoplePage extends React.Component {
                                 .map((person, index) => {
                                     return (
                                         <li key={index}>
-                                            <img src={ '/img/people/portraits/' + person.portrait } alt={ 'portrait of ' + person.firstName } width="260" height="260" />
+                                            <img src={ '/img/people/portraits/' + person.portrait } alt={ 'portrait of ' + person.firstName } />
                                             <dl>
-                                                <dt>Role in the wedding</dt>
+                                                <dt className="visually-hidden">Role in the wedding</dt>
                                                     <dd>
                                                         <h3>
                                                             { person.wedding.role }
@@ -143,7 +143,7 @@ class PeoplePage extends React.Component {
                     </section>
                     <section className="panel">
                         <h2>The Bridal Party</h2>
-                        <ul>
+                        <ul className="bridalParty">
                             {
                                 bridalParty && bridalParty.sort((a, b) => {
                                     return a.order - b.order;
@@ -151,9 +151,9 @@ class PeoplePage extends React.Component {
                                 .map((person, index) => {
                                     return (
                                         <li key={index}>
+                                            <img src={ '/img/people/portraits/' + person.portrait } alt={ 'portrait of ' + person.firstName } />
                                             <dl>
-                                                <img src={ '/img/people/portraits/' + person.portrait } alt={ 'portrait of ' + person.firstName } />
-                                                <dt>Role in the wedding</dt>
+                                                <dt className="visually-hidden">Role in the wedding</dt>
                                                     <dd>
                                                         <h3>
                                                             { person.wedding.role }
@@ -164,6 +164,10 @@ class PeoplePage extends React.Component {
                                                         { person.firstName + ' ' + person.lastName }
                                                     </dd>
                                             </dl>
+                                            {
+                                                person.id != 6 &&
+                                                <p>More info coming soon!</p>
+                                            }
                                         </li>
                                     )
                                 })

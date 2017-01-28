@@ -1,0 +1,26 @@
+.people {
+	img {
+		float:none;
+		left:0;
+		height:260px;
+		position:absolute;
+		top:30px;
+		width:260px;
+	}
+	dl {
+	}
+	.brideAndGroom {
+		> li {
+			min-height:320px;
+			padding-left:280px;
+			position:relative;
+		}
+	}
+	.bridalParty {
+		> li {
+			min-height:300px;
+			padding-left:280px;
+			position:relative;
+		}
+	}
+}
