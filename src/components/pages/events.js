@@ -31,10 +31,15 @@ class EventsPage extends React.Component {
                     <ol className="article-list">
                         {
                             events && events.map((event, index) => {
+                                const eventHasImagery = (event.img && event.img.src);
                                 return (
                                     <li key={ index }>
-                                        <article>
+                                        <article className={ eventHasImagery ? 'hasImagery' : '' }>
                                             <h2>{ event.title }</h2>
+                                            {
+                                                eventHasImagery &&
+                                                <img src={ '/img/' + event.img.src } alt={ event.img.alt } />
+                                            }
                                             <p>{ event.preview }</p>
                                             <Link to={ '/events/' + event.urlText } className="btn">
                                                 Read more<span className="visually-hidden"> about { event.accessibliltyDescription }</span>

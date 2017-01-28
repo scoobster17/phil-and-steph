@@ -34,8 +34,8 @@ const news = [
 		"preview": "The registrar has been booked. So now it is official, Steph is fencing Phil in! It's officially happening now!",
 		"content": "<section class=\"panel\"><p>The registrar has been booked and fully paid for, so the wedding is now officially going ahead!</p><p>We undertook a highly tense meeting with Essex Registrars, where we were individually questioned about the other. Steph did have to think about the questions a little bit sometimes, but I'll let her off. She does cook me dinner... In fact the meeting wasn't that bad, and the questions were quite basic. We didn't have to \"prove we loved each other\" as expected. It was quite quick too!</p><p>After the meeting, of course we had to celebrate, so we chose to do this in style and go to Nandos!</p><p>So that's it now, we are officially allowed to get married! How exciting!</p></section>",
 		"img": {
-			"src": "people/pas/cheeky-and-cute.jpg",
-			"alt": "Phil and Steph pose cheekily, dressed smart in a pub, seated."
+			"src": "wedding/misc/ceremony-arrow.jpg",
+			"alt": "A wooden arrow sign showing the direction of the ceremony."
 		}
 	},
 	{
@@ -47,8 +47,8 @@ const news = [
 		"preview": "We have set up our Wedding Gift List. We don't expect it, but if you feel obliged to get us a wedding gift, find out the details here.",
 		"content": "<section class=\"panel\"><p>The wedding gift list has been set up, and you can now view it here at <a href=\"https://www.ourdreamhoneymoon.com/phil-and-steph\" target=\"_blank\">www.ourdreamhoneymoon.com/phil-and-steph</a>.</p><p>As we have been moved into our lovely home now for over 2 years, we have acquired all that we need (as I'm sure most of you will know having visited), in terms of pot and pans, furniture and everything to make a house a home. We do not expect anything, but if you would like to contribute to our special celebration of marriage, then we have set up the website above so that people can contribute towards components of our honeymoon.</p></section>",
 		"img": {
-			"src": "scenery/beach.jpg",
-			"alt": "A sunny Jamaican Beach, on which sits a pair of sun loungers under a blue sky looking out onto a crystal clear ocean"
+			"src": "misc/honeymoon-site.png",
+			"alt": "A screen capture of our honeymoon gift list site's cover page, with a photo of a tropical island, and a sunny, holiday feel."
 		}
 	}
 ];

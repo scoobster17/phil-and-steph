@@ -19,7 +19,7 @@ class NewsPage extends React.Component {
             <main>
                 <section className="panel">
                     <h1>News</h1>
-                    <p>Here you can find out the latest news happening with the wedding.</p>
+                    <p>Here you can find out the latest news happening with the wedding planning, and other events happening with Phil & Steph.</p>
                 </section>
                 <section className="panel">
                     <h2>News Articles</h2>
