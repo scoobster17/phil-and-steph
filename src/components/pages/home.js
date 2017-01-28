@@ -74,7 +74,8 @@ class HomePage extends React.Component {
                             <i className="icon-female"></i>
                         </Link>
                     </section>
-                    <section id="wedding" className="panel happilyEngaged">
+                    {/*
+                    <section id="wedding" className="panel">
                         <h2>Photos & Videos</h2>
                         <p>Take a look at a selection of media of the couple and events, including the engagement party!</p>
                         <Link to="/media" className="btn-primary">
@@ -83,6 +84,7 @@ class HomePage extends React.Component {
                             <i className="icon-video"></i>
                         </Link>
                     </section>
+                    */}
                 </article>
             </main>
         )
