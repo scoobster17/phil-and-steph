@@ -24,7 +24,7 @@ const news = [
 	{
 		"id": 2,
 		"timestamp": 1476826234726,
-		"title": "Registrar booked; it's official!",
+		"title": "It's official - registrar booked!",
 		"urlText": "registrar-booked",
 		"accessibilityDescription": "the registrar being booked",
 		"preview": "The registrar has been booked. So now it is official, Steph is fencing Phil in! It's officially happening now!",
