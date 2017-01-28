@@ -4,4 +4,8 @@
 		margin-right: auto;
 		@include desktopMaxWidth;
 	}
+	.full-width-img {
+		margin: 40px -40px;
+		width: calc(100% + 80px);
+	}
 }
