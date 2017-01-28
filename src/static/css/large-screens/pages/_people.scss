@@ -1,4 +1,8 @@
 .people {
+	blockquote {
+		margin: 0 auto;
+		@include desktopMaxWidth;
+	}
 	img {
 		float:none;
 		left:0;
@@ -12,6 +16,9 @@
 	}
 	.brideAndGroom {
 		> li {
+			margin: 0 auto;
+    		max-width: 25em;
+			max-width: 40rem;
 			min-height:320px;
 			padding-left:300px;
 			position:relative;
@@ -22,6 +29,9 @@
 			top:40px;
 		}
 		> li {
+			margin: 0 auto;
+    		max-width: 25em;
+			max-width: 40rem;
 			min-height:300px;
 			padding-left:300px;
 			padding-top:40px;

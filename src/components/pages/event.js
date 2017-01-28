@@ -29,7 +29,7 @@ class EventPage extends React.Component {
         }
 
         return (
-            <main>
+            <main className="event">
                 {
                     event &&
                     <article dangerouslySetInnerHTML={{

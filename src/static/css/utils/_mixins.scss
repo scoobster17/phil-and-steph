@@ -22,3 +22,7 @@
     @content;
   }
 }
+@mixin desktopMaxWidth {
+    max-width:44em;
+    max-width:70rem;
+}

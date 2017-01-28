@@ -27,7 +27,7 @@ class ArticlePage extends React.Component {
             browserHistory.replace('/404');
         }
         return (
-            <main>
+            <main className="article">
                 {
                     article &&
                     <article dangerouslySetInnerHTML={{
