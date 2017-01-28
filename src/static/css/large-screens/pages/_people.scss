@@ -3,6 +3,7 @@
 		float:none;
 		left:0;
 		height:260px;
+		margin-left:0;
 		position:absolute;
 		top:30px;
 		width:260px;
@@ -12,14 +13,18 @@
 	.brideAndGroom {
 		> li {
 			min-height:320px;
-			padding-left:280px;
+			padding-left:300px;
 			position:relative;
 		}
 	}
 	.bridalParty {
+		img {
+			top:40px;
+		}
 		> li {
 			min-height:300px;
-			padding-left:280px;
+			padding-left:300px;
+			padding-top:40px;
 			position:relative;
 		}
 	}

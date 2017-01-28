@@ -39,7 +39,7 @@ class PeoplePage extends React.Component {
                     <section className="panel">
                         <h1>People</h1>
                         <p>
-                            Whether you are a friend or family member of ‘him” or ‘her”, get to know a bit about the couple here. You never know, if you do think you know them, you might find out something new! For instance, did you know Phil is a massive Iron Man fan? Or that Steph is ginger?
+                            Whether you are a friend or family member of &lsquo;him&rsquo; or &lsquo;her&rsquo;, get to know a bit about the couple here. You never know, if you do think you know them, you might find out something new! For instance, did you know Phil is a massive Iron Man fan? Or that Steph is ginger?
                         </p>
                         <p>
                             You can also find out about the bridal party, featuring the best man, the maid of honour, groomsmen and bridesmaids.
@@ -49,7 +49,7 @@ class PeoplePage extends React.Component {
                         <h2>The Bride &amp; Groom</h2>
                         <blockquote>
                             <p>
-                                This is a dynamic relationship which has the potential of clashes prompted through stubbornness from both sides. However as long as Leo has enough attention and feels loved and loving and Taurus feels comfortable and safe within the relationship, then the relationship can be very enjoyable. Taurus may tend to focus on the practical concerns too much for Leo's happiness and Leo may appear to be too much a drama queen for Taurus' peace of mind and stability. However if you are able to incorporate each other's difference, then a strong and stable relationship is possible. If you bring Taurus' sensual expression and Leo's warmth together then this should foster an enduring love.
+                                <span>&ldquo;</span>This is a dynamic relationship which has the potential of clashes prompted through stubbornness from both sides. However as long as Leo has enough attention and feels loved and loving and Taurus feels comfortable and safe within the relationship, then the relationship can be very enjoyable. Taurus may tend to focus on the practical concerns too much for Leo's happiness and Leo may appear to be too much a drama queen for Taurus' peace of mind and stability. However if you are able to incorporate each other's difference, then a strong and stable relationship is possible. If you bring Taurus' sensual expression and Leo's warmth together then this should foster an enduring love.<span>&rdquo;</span>
                             </p>
                             <footer>
                                 <cite>
@@ -163,6 +163,42 @@ class PeoplePage extends React.Component {
                                                     <dd>
                                                         { person.firstName + ' ' + person.lastName }
                                                     </dd>
+                                                <dt>How do you know Phil / Steph?</dt>
+                                                    <dd>
+                                                        { person.relationship }
+                                                    </dd>
+                                                {
+                                                    person.firstMeeting &&
+                                                    <dt>First time you met Phil & Steph:</dt>
+                                                }
+                                                    {
+                                                        person.firstMeeting &&
+                                                        <dd dangerouslySetInnerHTML={{
+                                                            __html: person.firstMeeting
+                                                        }}>
+                                                        </dd>
+                                                    }
+                                                {
+                                                    person.funnyStory &&
+                                                    <dt>Funny story about Phil & Steph:</dt>
+                                                }
+                                                    {
+                                                        person.funnyStory &&
+                                                        <dd dangerouslySetInnerHTML={{
+                                                            __html: person.funnyStory
+                                                        }}>
+                                                        </dd>
+                                                    }
+                                                {
+                                                    person.funFact &&
+                                                    <dt>Fun fact about you:</dt>
+                                                }
+                                                    {
+                                                        person.funFact &&
+                                                        <dd>
+                                                            { person.funFact }
+                                                        </dd>
+                                                    }
                                             </dl>
                                             {
                                                 person.id != 6 &&

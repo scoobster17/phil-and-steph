@@ -13,6 +13,13 @@
 			}
 		}
 	}
+	.btn-primary {
+		&:hover {
+			i {
+				color: $pinterestColour;
+			}
+		}
+	}
 }
 .clearfix-small-only:after {
 	content: none;

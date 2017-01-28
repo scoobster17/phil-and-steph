@@ -110,7 +110,8 @@ const people = [
 		"portrait": "lou.jpg",
 		"wedding": {
 			"role": "Maid Of Honour"
-		}
+		},
+		"relationship": "Went to University with Steph"
 	},
 	{
 		"id": 3,
@@ -122,7 +123,8 @@ const people = [
 		"portrait": "rob.jpg",
 		"wedding": {
 			"role": "Groomsman"
-		}
+		},
+		"relationship": "Went to University with Steph"
 	},
 	{
 		"id": 4,
@@ -134,7 +136,8 @@ const people = [
 		"portrait": "darren.jpg",
 		"wedding": {
 			"role": "Best Man"
-		}
+		},
+		"relationship": "Went to school with Phil"
 	},
 	{
 		"id": 5,
@@ -146,7 +149,8 @@ const people = [
 		"portrait": "bobs.jpg",
 		"wedding": {
 			"role": "Bridesmaid"
-		}
+		},
+		"relationship": "Steph's sister"
 	},
 	{
 		"id": 6,
@@ -158,7 +162,11 @@ const people = [
 		"portrait": "kay.jpg",
 		"wedding": {
 			"role": "Bridesmaid"
-		}
+		},
+		"relationship": "Went to school with Steph",
+		"firstMeeting": "<p>I don't remember the exact first time I met Steph. I do, however, remember her constant hand raising in class. She always knew the answer and so I sat next to her. She was awesome to sit next to...sometimes she even told me the answer!</p><p>The first time I met Phil was at their housewarming. Phil was determined to make a good impression...as were we.</p><p>Suddenly, there was an awful smell. I was the first one who got the blame but said it wasn't me. Every other person whispered who it was and said it wasn't them. We turned round to find Phil chuckling to himself... we had found the culprit. To this day, I don't stand downwind of Phil!</p>",
+		"funFact": "I could do the splits until I was 22.",
+		"funnyStory": "<p>Steph and Phil love games nights. So much so, when Anthony bought home a game of Mario monopoly... we all wore Mario hats!</p>"
 	},
 	{
 		"id": 7,
@@ -170,7 +178,8 @@ const people = [
 		"portrait": "chris.jpg",
 		"wedding": {
 			"role": "Groomsman"
-		}
+		},
+		"relationship": "Partner of Steph's University friend"
 	},
 	{
 		"id": 8,
@@ -182,7 +191,8 @@ const people = [
 		"portrait": "sheldon.jpg",
 		"wedding": {
 			"role": "Page Boy"
-		}
+		},
+		"relationship": "Steph's brother"
 	}
 ];
 

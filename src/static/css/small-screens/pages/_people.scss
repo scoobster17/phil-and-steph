@@ -1,7 +1,39 @@
 .people {
+	blockquote {
+	    @include fontSize(1.6);
+	    font-style:italic;
+	    line-height:1.6;
+	    margin: 0 -20px;
+	    max-width:41em;
+	    max-width:65rem;
+	    overflow:hidden;
+	    padding:20px 40px;
+	    position:relative;
+	    span:first-child {
+	        font-family:Georgia, serif;
+	        @include fontSize(30);
+	        left:-70px;
+	        line-height:1;
+	        opacity:.3;
+	        padding:0 50px; // iOS bug
+	        position:absolute;
+	        top:-30px;
+	    }
+	    span:last-child {
+	        bottom: -200px;
+	        font-family:Georgia, serif;
+	        @include fontSize(30);
+	        line-height:1;
+	        opacity:.3;
+	        padding:0 50px; // iOS bug
+	        position:absolute;
+	        right:-30px;
+	    }
+	}
 	img {
 		float:right;
 		height:150px;
+		margin: 0 0 20px 20px;
 		width:150px;
 	}
 	.brideAndGroom {
