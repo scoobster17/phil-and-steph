@@ -7,12 +7,14 @@ class NotFoundPage extends React.Component {
 		return (
 			<main>
 				<article>
-					<section>
+					<section className="panel">
 						<h1>Page not found</h1>
 						<p>
 							Whoops! You seem to have gotten a bit lost! But because we're kind we'll point you in the right direction.
 						</p>
-						<Link to="/" className="btn">Go back to home page</Link>
+						<p>
+							<Link to="/" className="btn">Go back to home page</Link>
+						</p>
 					</section>
 				</article>
 			</main>
