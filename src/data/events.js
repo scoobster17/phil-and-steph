@@ -14,13 +14,7 @@ const events = [
 			"src": "wedding/events/proposal/proposal.jpg",
 			"alt": "A wooden arrow sign showing the direction of the ceremony."
 		},
-        "pictures": [
-        	{
-        		"src": "/img/photos/us/newYears.jpg",
-        		"alt": "Phil and Steph in a cute embrace in a kitchen, with Phil burying his head in the side of Steph's head as they both smile widely."
-        	}
-        ],
-        "comments": true
+		"comments": true
 	},
 	{
 		"id": 1,
@@ -31,13 +25,12 @@ const events = [
 		"preview": "The Engagement Party was a great success back in November 2015, with family and friends attending...",
 		"article": {
 			"title": "The Engagement Party",
-			"content": "<section class=\"panel\"><h2>Frocks on</h2><p>We held a party to celebrate <del>Steph</del> <ins>our engagement</ins> back in November 2015. Thank you for everyone who attended!</p><p><strong>CALLING ALL PHOTOGRAPHERS!</strong> If you have any photos of the evening we would love to add them to our collection. We would also love to have them displayed on this site! Please do send them over! (Preferably originals and full size; Phil has a bit of experience with Photoshop if needed!). Check out WeTransfer.com to send up to 2GB free of charge; you can find an email address on our contact page.</p></section><section class=\"panel\"><h2>Who was invited</h2><p>We invited family and friends to join us, with over 100 people expected to turn up and partake in the celebration of our upcoming marriage.</p></section><section class=\"panel\"><h2>Where was it?</h2><p>We hired the Laindon Community Centre for the evening of Saturday 14<sup>th</sup> November 2015, with guests to arrive from 7pm. Once inside the venue by either of the main entrances, opposite reception are 3 doors amongst toilet doors, the far left one gains entrance to the hall that was hired.</p><p>The venue is close enough to our home that we could stumble home afterwards!</p></section>"
+			"content": "<section class=\"panel\"><h2>Frocks on</h2><img src=\"/img/wedding/events/engagement/couple.jpg\" alt=\"The couple in an embrace before the party\" /><p>We held a party to celebrate <del>Steph</del> <ins>our engagement</ins> back in November 2015. Thank you for everyone who attended!</p><p><strong>CALLING ALL PHOTOGRAPHERS!</strong> If you have any photos of the evening we would love to add them to our collection. We would also love to have them displayed on this site! Please do send them over! (Preferably originals and full size; Phil has a bit of experience with Photoshop if needed!). Check out WeTransfer.com to send up to 2GB free of charge; you can find an email address on our contact page.</p></section><section class=\"panel\"><h2>Who was invited</h2><p>We invited family and friends to join us, with over 100 people expected to turn up and partake in the celebration of our upcoming marriage.</p><img src=\"/img/wedding/events/engagement/siblings-to-be.jpg\" alt=\"The siblings-to-be as of the marriage, posing at the engagement party\" /></section><section class=\"panel\"><h2>Where was it?</h2><p>We hired the Laindon Community Centre for the evening of Saturday 14<sup>th</sup> November 2015, with guests to arrive from 7pm. Once inside the venue by either of the main entrances, opposite reception are 3 doors amongst toilet doors, the far left one gains entrance to the hall that was hired.</p><p>The venue is close enough to our home that we could stumble home afterwards!</p></section>"
         },
         "img": {
 			"src": "wedding/events/engagement/engagement-party.jpg",
 			"alt": "A wooden arrow sign showing the direction of the ceremony."
-		},
-        "pictures": []
+		}
 	},
 	{
 		"id": 2,
@@ -53,8 +46,7 @@ const events = [
         "img": {
 			"src": "wedding/misc/ceremony-arrow.jpg",
 			"alt": "A wooden arrow sign showing the direction of the ceremony."
-		},
-        "pictures": []
+		}
 	}
 ];
 
