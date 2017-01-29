@@ -16,9 +16,25 @@
 
 // wedding countdown
 .weddingCountdown {
+	background: url('/img/wedding/characters/cogsworth.png') no-repeat  115% 82%;
+	background-size: 130px 176px;
+	position: relative;
 	text-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+	&:after {
+		background: url('/img/wedding/characters/lumiere-flipped.png') no-repeat 0 0;
+		background-size:130px 183px;
+		bottom:9%;
+		content:'';
+		display:block;
+		height: 183px;
+		left:-10%;
+		position:absolute;
+		width:130px;
+	}
 	p {
+		position: relative; // to bring in front of lumiere
 		text-align: center;
+		z-index: 1; // to bring in front of lumiere
 	}
 	.remaining-time {
 		display: block;
@@ -34,5 +50,7 @@
 	}
 	.btn-primary {
 		margin-bottom: 20px;
+		position: relative; // to bring in front of lumiere
+		z-index: 1; // to bring in front of lumiere
 	}
 }
