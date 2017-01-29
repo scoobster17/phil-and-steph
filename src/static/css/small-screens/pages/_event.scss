@@ -1,5 +1,6 @@
 .event {
 	.panel {
+		overflow: hidden; // to clear floated imagery
 		padding-bottom:20px;
 		padding-top:20px;
 		&:first-child {
@@ -22,8 +23,28 @@
 		margin:20px 0;
 		width:100%;
 	}
+	.in-paragraph {
+		width:47%;
+	}
+	.img-left {
+		float: left;
+		margin-right:20px;
+		+ .img-right {
+			margin-left:0;
+		}
+	}
+	.img-right {
+		float: right;
+		margin-left:20px;
+	}
 	.full-width-img {
 		margin:0;
 		width:100%;
+	}
+	.match-width {
+		margin-left:auto;
+		margin-right:auto;
+		@include desktopMaxWidth;
+		overflow: hidden;
 	}
 }
