@@ -16,12 +16,18 @@
 	}
 	.brideAndGroom {
 		> li {
+			background-position: 100% 64%;
+			background-size: 413px 450px;
 			margin: 0 auto;
     		max-width: 25em;
 			max-width: 40rem;
 			min-height:320px;
 			padding-left:300px;
 			position:relative;
+			&:last-child {
+				background-position: 100% 110%;
+				background-size: 337px 480px;
+			}
 		}
 	}
 	.bridalParty {
