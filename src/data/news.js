@@ -50,6 +50,32 @@ const news = [
 			"src": "misc/honeymoon-site.png",
 			"alt": "A screen capture of our honeymoon gift list site's cover page, with a photo of a tropical island, and a sunny, holiday feel."
 		}
+	},
+	{
+		"id": 4,
+		"timestamp": 1476826234728,
+		"title": "Music and more bookings",
+		"urlText": "music-booked",
+		"accessibilityDescription": "the music being booked",
+		"preview": "We have booked a couple of last things to tie the day together, including music!",
+		"content": "<section class=\"panel\"><p>The music for the ceremony and wedding breakfast period has been booked! Along with a couple of other final \"big\" things. We won't tell you what it is just yet (although I think Steph has already blabbed to a few people!), but we hope it will add something really special to the day. And some of the songs we have heard in demonstration have been simply beautiful.</p><p>Hopefully you will recognise some of the instrumentals! If so, we hope you will sing along! If you can get a word in over Steph singing her heart out!</p><img src=\"/img/wedding/misc/music.jpg\" alt=\"\" /></section>",
+		"img": {
+			"src": "wedding/misc/thumb-music.jpg",
+			"alt": "A music sheet"
+		}
+	},
+	{
+		"id": 5,
+		"timestamp": 1476826234729,
+		"title": "Be Our Guest",
+		"urlText": "rsvp-deadline",
+		"accessibilityDescription": "deadline for rsvp's being returned",
+		"preview": "It's not too late to let us know you wish to join us on our special day...",
+		"content": "<section class=\"panel\"><p>It's deadline day people! If you haven't done so already, please let us know if you are coming to the wedding or not. Many thanks to those that have, by way of wedding acceptance card, returning our RSVP cards, emailing, or even whatsapping pictures of the filled out RSVP cards! Haha. We appreciate everyone that has chosen to be with us on our special day.</p><p>It just so happens that today is the day that Beauty and the Beast comes out at the Cinema too, which we are off to see in the not too distant future! Fancy that! Well done Disney, great timing!</p><img src=\"/img/wedding/misc/time.jpg\" alt=\"\" /></section>",
+		"img": {
+			"src": "wedding/misc/rose-animated.gif",
+			"alt": "beauty and the beast rose animated as a petal falls"
+		}
 	}
 ];
 

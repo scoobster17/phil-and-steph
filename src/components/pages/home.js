@@ -36,7 +36,7 @@ class HomePage extends React.Component {
                             {
                                 news && news.sort((a, b) => {
                                     return b.timestamp - a.timestamp;
-                                }).map((item, index) => {
+                                }).slice(0,3).map((item, index) => {
                                     const articleHasImagery = (item.img && item.img.src);
                                     return (
                                         <li key={ index }>
