@@ -91,6 +91,9 @@ dd {
     position:absolute;
     left: $accessLeft;
 }
+abbr {
+    text-decoration: none; // chrome fix for double underline
+}
 
 // overrides
 .hidden {
