@@ -45,7 +45,7 @@ const news = [
 		"urlText": "gift-list-set-up",
 		"accessibilityDescription": "the gift list being set up",
 		"preview": "We have set up our Wedding Gift List. We don't expect it, but if you feel obliged to get us a wedding gift, find out the details here.",
-		"content": "<section class=\"panel\"><p>The wedding gift list has been set up, and you can now view it here at <a href=\"https://www.ourdreamhoneymoon.com/phil-and-steph\" target=\"_blank\">www.ourdreamhoneymoon.com/phil-and-steph</a>.</p><p>As we have been moved into our lovely home now for over 2 years, we have acquired all that we need (as I'm sure most of you will know having visited), in terms of pot and pans, furniture and everything to make a house a home. We do not expect anything, but if you would like to contribute to our special celebration of marriage, then we have set up the website above so that people can contribute towards components of our honeymoon.</p><img src=\"/img/misc/gift-list-site.jpg\" alt=\"Screen capture of the gift-list site\" /></section>",
+		"content": "<section class=\"panel\"><p>The wedding gift list has been set up, and you can now view it here at <a href=\"https://www.ourdreamhoneymoon.com/phil-and-steph\" target=\"_blank\" class=\"textLink\">www.ourdreamhoneymoon.com/phil-and-steph</a>.</p><p>As we have been moved into our lovely home now for over 2 years, we have acquired all that we need (as I'm sure most of you will know having visited), in terms of pot and pans, furniture and everything to make a house a home. We do not expect anything, but if you would like to contribute to our special celebration of marriage, then we have set up the website above so that people can contribute towards components of our honeymoon.</p><img src=\"/img/misc/gift-list-site.jpg\" alt=\"Screen capture of the gift-list site\" /></section>",
 		"img": {
 			"src": "misc/honeymoon-site.png",
 			"alt": "A screen capture of our honeymoon gift list site's cover page, with a photo of a tropical island, and a sunny, holiday feel."
@@ -75,6 +75,19 @@ const news = [
 		"img": {
 			"src": "wedding/misc/rose-animated.gif",
 			"alt": "beauty and the beast rose animated as a petal falls"
+		}
+	},
+	{
+		"id": 6,
+		"timestamp": 1476826234730,
+		"title": "Venue and Honeymoon paid",
+		"urlText": "its-happening",
+		"accessibilityDescription": "the fact that the wedding is definitely set to go.",
+		"preview": "Both the venue (+ registrar if you're being picky!) and the honeymoon payments have been made so the day is definitely going to happen!",
+		"content": "<section class=\"panel\"><p>That's it, it's definitely happening. Venue? Paid. Registrar? Paid. Honeymoon? Paid. Sorted! We are all set now to get married so make sure you book that time off! And perhaps the Tuesday too if you plan on it being a heavy one!</p><p>We look forward to seeing you, our guests, on our special day, and sharing in our commitment to one another. And then get jealous of our lovely trip away which is also definitely happening now! So excited! (Don't tell Steph but I'm more excited about that part!).</p><p>You can still contribute to our wedding gift list to contribute part of the honeymoon here at <a href=\"https://www.ourdreamhoneymoon.com/phil-and-steph\" target=\"_blank\" class=\"textLink\">www.ourdreamhoneymoon.com/phil-and-steph</a>.</p><img src=\"/img/wedding/misc/paid.jpg\" alt=\"A 'Paid' stamp as if stamped across a paper document\" /></section>",
+		"img": {
+			"src": "wedding/misc/thumb-paid.jpg",
+			"alt": "A 'Paid' stamp as if stamped across a paper document"
 		}
 	}
 ];
