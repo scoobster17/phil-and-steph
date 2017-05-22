@@ -111,7 +111,9 @@ const people = [
 		"wedding": {
 			"role": "Maid Of Honour"
 		},
-		"relationship": "Went to University with Steph"
+		"relationship": "Steph and I met at University. Hannah and Simon were in the same group at Uni and as we were in different halls, decided that we should all meet up. Steph was in the same halls as Simon and Dave and we were all in the same halls as Hannah. From the moment we met we all became great friends! Through Steph's strict time keeping we enjoyed many nights out and getting dressed up together. (Especially our first Summer Ball!) We continued to be good friends throughout University but became really close friends after. She is one of the best people I know and makes my life a better place. She truly is a special person who brings happiness wherever she goes. I couldn't ask for a better person to help guide my daughter to make good decisions. She's one in a million and I'm honoured to be her Maid Of Honour on her very special day.",
+		"funFact": "An interesting fact about me is that my weirdest mode of transport ever has been a trolley ride!",
+		"funnyStory": "<p>One of my favourite stories of me and Steph is the 'Limit!' story. We went to Centre Parcs with all of the Uni gang for a weekend away. On the Friday evening, after arriving, we decided to play drinking games. Steph was not doing well in the games and therefore drank a considerable amount of alcohol. She decided to end the game by shouting, 'LIMIT!' and then retired to bed. This had everyone in hysterics and became a popular phrase throughout the weekend. It didn't end there though.... In the morning, we had booked some badminton courts. Clearly Steph woke up feeling a little unwell. She decided to eat a whole packet of mints as she thought this would make her feel better. Instead this made her feel worse... Once we got to the sports centre, Steph ran to the toilet where she was then sick. When she came out of the toilet cubicle, she felt rather embarrassed and didn't want people to judge her for being hungover. Therefore, she decided to publicly announce in the toilet that she was sick due to her morning sickness and being pregnant. I struggled to keep a straight face and this also became another favourite topic of conversation throughout the whole weekend! A story I will never forget!</p>"
 	},
 	{
 		"id": 3,
@@ -124,7 +126,10 @@ const people = [
 		"wedding": {
 			"role": "Groomsman"
 		},
-		"relationship": "Went to University with Steph"
+		"relationship": "Went to University with Steph.",
+		"firstMeeting": "<p>Supposedly I met Phil at Hannah's New Years Eve party (he obviously made a big impression from the get go).  At the time I was pre occupied with my now Wife, who was locked in a room with Hannah, while Ronan Keating produced a live performance...</p>",
+		"funFact": "Random fact about me is I was indecisive at university. I used to flip a coin when making decisions, from what drink to have, what to wear, or to go out at all!",
+		"funnyStory": "<p>Ongoing amusement provided by Phil within a WhatsApp group with Chris, Phil and I. Whenever Phil goes out for drinks drunken messages become abundant and the tangents are completely out of left field. Any time I want explanations he has fallen asleep or cannot remember his train of thought. </p>"
 	},
 	{
 		"id": 4,

@@ -165,7 +165,9 @@ class PeoplePage extends React.Component {
                                                     </dd>
                                                 <dt>How do you know Phil / Steph?</dt>
                                                     <dd>
-                                                        { person.relationship }
+                                                        <p>
+                                                            { person.relationship }
+                                                        </p>
                                                     </dd>
                                                 {
                                                     person.firstMeeting &&
@@ -196,12 +198,14 @@ class PeoplePage extends React.Component {
                                                     {
                                                         person.funFact &&
                                                         <dd>
-                                                            { person.funFact }
+                                                            <p>
+                                                                { person.funFact }
+                                                            </p>
                                                         </dd>
                                                     }
                                             </dl>
                                             {
-                                                person.id != 6 &&
+                                                !person.funnyStory && !person.funFact &&
                                                 <p>More info coming soon!</p>
                                             }
                                         </li>
