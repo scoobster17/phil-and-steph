@@ -21,11 +21,20 @@
 			}
 		}
 	}
+	.btn {
+		&:hover,
+		&:focus,
+		&:active {
+			border-color: $pinterestColour;
+			color: $pinterestColour;
+		}
+	}
 	.btn-primary {
-		&:hover {
-			i {
-				color: $pinterestColour;
-			}
+		&:hover,
+		&:focus,
+		&:active {
+			background-color:transparent;
+			color: inherit;
 		}
 	}
 }

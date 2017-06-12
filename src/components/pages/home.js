@@ -25,10 +25,20 @@ class HomePage extends React.Component {
                             Wedding Countdown
                         </h2>
                         <WeddingCountdown />
-                        <Link to="/events/wedding" className="btn-primary">
-                            All about the Wedding
-                            <i className="icon-heart"></i>
-                        </Link>
+                        <ul>
+                            <li>
+                                <Link to="/events/wedding-rundown" className="btn-primary">
+                                    The Wedding Rundown
+                                    <i className="icon-help-circled"></i>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/events/wedding" className="btn">
+                                    All about the Wedding
+                                    <i className="icon-heart"></i>
+                                </Link>
+                            </li>
+                        </ul>
                     </section>
                     <section className="panel news">
                         <h2>Latest News</h2>
