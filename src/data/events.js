@@ -57,7 +57,7 @@ const events = [
 		"preview": "Find out all the essential information for the big day here at a glance",
 		"article": {
 			"title": "The Wedding Itinerary",
-			"content": "<section class=\"panel\"><h2>Wedding Day Itinerary</h2></section>"
+			"content": "<section class=\"panel\"><h2>Your quick guide to the special day</h2><p>Here is a quick rundown of Phil &amp; Steph&apos;s Wedding Day.</p></section><section class=\"panel\"><h2>What's happening and when</h2><dl><dt>14:00</dt><dd>Guests arrive at Three Rivers Golf &amp; Country Club</dd><dt>14:30</dt><dd>Ceremony</dd><dt>15:00</dt><dd>Photos</dd><dt>16:40</dt><dd>Guests are seated for the Wedding Breakfast</dd><dt>16:50</dt><dd>Speeches, consisting of Father of the Bride, followed by the Beast, and last but not least, the Best Man.</dd><dt>17:10</dt><dd>The great feast</dd><dt>19:00</dt><dd>Cake Cutting</dd><dt>20:00</dt><dd>The Beauty &amp; the Beast&apos;s first dance</dd><dt>00:00</dt><dd>Carriages</dd></dl><a class=\"btn-primary\" href=\"/events/wedding\">Read more about the wedding</a><p>We look forward to you being our guests on this very special day.</p></section>"
         },
         "img": {
 			"src": "wedding/misc/ceremony-arrow.jpg",

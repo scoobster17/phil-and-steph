@@ -15,4 +15,11 @@
 		max-width: calc(100% + 40px);
 		width: calc(100% + 40px);
 	}
+	dl {
+		margin: 0 auto;
+		@include desktopMaxWidth;
+		+ a {
+			margin: 0 auto; // to fix
+		}
+	}
 }
