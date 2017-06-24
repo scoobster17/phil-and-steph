@@ -155,7 +155,10 @@ const people = [
 		"wedding": {
 			"role": "Bridesmaid"
 		},
-		"relationship": "Steph's sister"
+		"relationship": "Steph's sister",
+		"firstMeeting": "<p>I don't really remember the first time I met Phil but he came round our house.</p>",
+		"funFact": "I can cook spaghetti bolognese.",
+		"funnyStory": "<p>We were walking along and Sheldon was talking to me and Phil, and Sheldon bumped into a bright post at Legoland.</p>"
 	},
 	{
 		"id": 6,
@@ -197,7 +200,10 @@ const people = [
 		"wedding": {
 			"role": "Page Boy"
 		},
-		"relationship": "Steph's brother"
+		"relationship": "Steph's brother",
+		"firstMeeting": "<p>I don't remember the first time I met Phil but it was around 5 years ago. But I do remember when Phil was playing Xbox with me when mum and dad were at Chinnerys.</p>",
+		"funFact": "I play for Wickford Town Football Club (under 11's).",
+		"funnyStory": "<p>When I went to Legoland and walked into a brightly coloured post. It was multi-coloured and easy to see if I wasn't such a numpty.</p>"
 	}
 ];
 
