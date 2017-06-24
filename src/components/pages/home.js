@@ -27,8 +27,8 @@ class HomePage extends React.Component {
                         <WeddingCountdown />
                         <ul>
                             <li>
-                                <Link to="/events/wedding-rundown" className="btn-primary">
-                                    The Wedding Rundown
+                                <Link to="/events/wedding-day-timings" className="btn-primary">
+                                    Wedding Day Timings
                                     <i className="icon-help-circled"></i>
                                 </Link>
                             </li>

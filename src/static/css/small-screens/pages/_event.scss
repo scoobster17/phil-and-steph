@@ -47,4 +47,34 @@
 		@include desktopMaxWidth;
 		overflow: hidden;
 	}
+	.decor {
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+		width:auto;
+		&.remove-whitespace-below {
+			margin-bottom:-15px;
+		}
+	}
+	dl {
+		margin: 0 auto;
+		@include desktopMaxWidth;
+		overflow:hidden;
+	}
+	dt {
+		clear:left;
+		float: left;
+		padding-right: 2%;
+		text-align: right;
+		width: 28%;
+	}
+	dd {
+		float:left;
+		width: 70%;
+	}
+	p {
+		.btn-primary {
+			margin-top:20px;
+		}
+	}
 }
