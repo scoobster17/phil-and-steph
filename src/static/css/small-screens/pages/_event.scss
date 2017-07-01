@@ -78,12 +78,25 @@
 		}
 	}
 	article {
-		iframe {
+		figure {
+			background: #ededed;
 			margin-left:-20px;
 			margin-right:-20px;
-			min-height:250px;
 			width:100%; // fallback for calc
 			width:calc(100% + 40px);
+			&:before {
+				content:'Map loading...';
+				font-size:1.6rem;
+				margin-top:115px;
+				position:absolute;
+				text-align: center;
+				width:100%;
+			}
+		}
+		iframe {
+			min-height:250px;
+			position:relative;
+			width:100%;
 		}
 	}
 }

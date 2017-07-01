@@ -16,11 +16,16 @@
 		width: calc(100% + 40px);
 	}
 	article {
-		iframe {
+		figure {
 			margin-left:-40px;
 			margin-right:-40px;
-			min-height:500px;
 			width: calc(100% + 80px);
+			&:before {
+				margin-top:240px;
+			}
+		}
+		iframe {
+			min-height:500px;
 		}
 	}
 }
