@@ -86,6 +86,13 @@ dd {
     margin:0 0 20px;
 }
 
+// misc
+address {
+    @include fontSize(1.6);
+    line-height:1.5;
+    margin-bottom:20px;
+}
+
 // accessibility
 .visually-hidden {
     position:absolute;

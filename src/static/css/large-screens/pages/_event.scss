@@ -15,4 +15,12 @@
 		max-width: calc(100% + 40px);
 		width: calc(100% + 40px);
 	}
+	article {
+		iframe {
+			margin-left:-40px;
+			margin-right:-40px;
+			min-height:500px;
+			width: calc(100% + 80px);
+		}
+	}
 }

@@ -31,7 +31,7 @@ class EventsPage extends React.Component {
                     <ol className="article-list">
                         {
                             events && events.sort((a, b) => {
-                                return a.order - b.order;
+                                return b.order - a.order;
                             }).map((event, index) => {
                                 const eventHasImagery = (event.img && event.img.src);
                                 return (
