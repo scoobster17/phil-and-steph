@@ -26,7 +26,7 @@ module.exports = [
 			loaders: [
 				{
 					test: /\.scss$/,
-					loader: ExtractTextPlugin.extract("css!sass")
+					loader: ExtractTextPlugin.extract("css-loader!sass-loader")
 				},
 				{
 					test: /\.(eot|svg|ttf|woff|woff2)/,
@@ -38,8 +38,9 @@ module.exports = [
 			new webpack.DefinePlugin({
 				'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
 			}),
-			new ExtractTextPlugin('../css/[name].css', {
-				allChunks: true
+			new ExtractTextPlugin({
+				allChunks: true,
+				filename: '../css/[name].css'
 			}),
 			new CopyWebpackPlugin([
 				{from: __dirname + '/src/static/img', to: '../img'}
@@ -65,11 +66,7 @@ module.exports = [
 						path.join(__dirname, 'src', 'static'),
 						path.join(__dirname, 'src', 'views')
 					],
-					loader: ['babel-loader'],
-					query: {
-						cacheDirectory: 'babel-cache',
-						presets: ['react', 'es2015']
-					}
+					loader: ['babel-loader']
 				}
 			]
 		},
@@ -77,8 +74,6 @@ module.exports = [
 			new webpack.DefinePlugin({
 				'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
 			}),
-			new webpack.optimize.DedupePlugin(),
-			new webpack.optimize.OccurenceOrderPlugin(),
 			new webpack.optimize.UglifyJsPlugin({
 				compress: { warnings: false },
 				mangle: true,
@@ -111,10 +106,7 @@ module.exports = [
 						path.join(__dirname, 'dist'),
 						path.join(__dirname, 'src', 'static')
 					],
-					loader: ['babel-loader'],
-					query: {
-						presets: ['react', 'es2015']
-					}
+					loader: ['babel-loader']
 				}
 			]
 		},
