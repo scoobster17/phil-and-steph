@@ -187,7 +187,10 @@ const people = [
 		"wedding": {
 			"role": "Groomsman"
 		},
-		"relationship": "Partner of Steph's University friend"
+		"relationship": "Partner of Steph's University friend",
+		"firstMeeting": "<p>I first met Phil and Steph at Rob and Louises' new years eve party. Obviously trying to make a good impression I joined in with all the drinking games and was useless however I was not at the centre of attention as Pud (Matt Dicks) took all the attention by being in bed by 10 and throwing up in the spare room.</p>",
+		"funFact": "I'm trying to teach Phil how to play golf.",
+		"funnyStory": "<p>There is an annual Pub race in the village where Lou and Rob used to live, the day started very tame with a beer or two followed by drinking games. The task was whoever finished their drink first gave a five minute warning. If the others failed to finish their drinks a forfeit was implemented. Me and Phil gave Rob and Matt the warning to which they missed me buying shots for everyone. Turns out wasn't a good idea as we both ended up very ill and asleep on the floor whilst the girls watched movies.</p>"
 	},
 	{
 		"id": 8,
